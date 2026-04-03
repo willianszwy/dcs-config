@@ -17,19 +17,19 @@ UIMainView = Viewports.Center
 GU_MAIN_VIEWPORT = Viewports.Center
 
 -- Monitor secundario: 1920x1080, posicionado a direita do principal (X=3440)
--- Dois MFDs 800x800, centralizados verticalmente, com margem lateral de 60px
+-- Helios painel 800x800, area interna 580x580 com offset de 110px
 LEFT_MFCD =
 {
-  x = 3440 + 60;    -- 60px de margem esquerda
-  y = 140;          -- (1080 - 800) / 2 = centralizado verticalmente
-  width = 800;
-  height = 800;
+  x = 3440 + 60 + 110;  -- offset do painel Helios + bezel
+  y = 140 + 110;
+  width = 580;
+  height = 580;
 }
 
 RIGHT_MFCD =
 {
-  x = 3440 + 60 + 800 + 200;  -- 200px de espaco no meio
-  y = 140;
-  width = 800;
-  height = 800;
+  x = 3440 + 1060 + 110;  -- painel direito + bezel
+  y = 140 + 110;
+  width = 580;
+  height = 580;
 }

@@ -1,6 +1,6 @@
 # DCS World — Setup Multi-Monitor F-16C
 
-Setup para exportar os MFDs do F-16C para um monitor secundário, com ajuste de brilho via ReShade.
+Setup para exportar os MFDs do F-16C para um monitor secundário, com ajuste de brilho via ReShade e botões OSB clicáveis via Helios.
 
 ## Ambiente
 
@@ -27,10 +27,10 @@ MonitorSetup/f16_2monitors.lua
 ### Layout no monitor 2
 
 ```
-|<60px>| LEFT_MFCD 800x800 |<200px>| RIGHT_MFCD 800x800 |<60px>|
+|<170px>| LEFT_MFCD 580x580 |<370px>| RIGHT_MFCD 580x580 |<170px>|
 ```
 
-Centralizados verticalmente (140px de margem topo/base).
+> Os MFDs são exportados em 580x580 para alinhar com a área interna dos painéis do Helios (800x800 com bezel de ~110px).
 
 ### Viewports disponíveis no F-16C
 
@@ -70,14 +70,54 @@ ReShade/UIMask.png         →  G:\DCS World\bin\reshade-shaders\Textures\
 
 ---
 
+## 3. Helios — botões OSB clicáveis
+
+O Helios cria uma sobreposição transparente com os botões OSB clicáveis em cima dos MFDs exportados.
+
+**Instalação:**
+1. Baixar em [github.com/HeliosVirtualCockpit/Helios/releases](https://github.com/HeliosVirtualCockpit/Helios/releases)
+2. Instalar e abrir o **Helios Profile Editor**
+
+**Carregar o perfil:**
+```
+Helios/dcs-f16.hpf
+→ C:\Users\[usuario]\Documents\Helios\Profiles\
+```
+
+Abrir o Profile Editor → `Profile → Open` → selecionar `dcs-f16.hpf`
+
+**Posições dos painéis MFD no Helios (monitor 2):**
+
+| Painel | Left | Top | Width | Height |
+|---|---|---|---|---|
+| LEFT MFD | 60 | 140 | 800 | 800 |
+| RIGHT MFD | 1060 | 140 | 800 | 800 |
+
+**Interface DCS:**
+- No Profile Editor: `Profile → Add Interface → DCS F-16C`
+- Selecionar a pasta do DCS e clicar em **Install**
+- Isso configura o `Export.lua` automaticamente
+
+**Para usar:**
+1. Abrir o **Helios Control Center**
+2. Selecionar o perfil `dcs-f16`
+3. Clicar em **Start**
+4. Entrar no DCS com o F-16C
+
+> O Helios Control Center deve ficar aberto durante toda a sessão de voo.
+
+---
+
 ## Estrutura do repositório
 
 ```
 ├── README.md
-├── INSTRUCOES.md               # instruções detalhadas
+├── INSTRUCOES.md
 ├── MonitorSetup/
 │   └── f16_2monitors.lua       # config de monitores do DCS
-└── ReShade/
-    ├── ReShadePreset.ini        # preset do ReShade
-    └── UIMask.png               # máscara para isolar efeito nos MFDs
+├── ReShade/
+│   ├── ReShadePreset.ini       # preset do ReShade
+│   └── UIMask.png              # máscara para isolar efeito nos MFDs
+└── Helios/
+    └── dcs-f16.hpf             # perfil do Helios com MFDs do F-16C
 ```

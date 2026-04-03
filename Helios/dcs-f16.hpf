@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HeliosProfile>
+  <Version>3</Version>
+  <Monitors>
+    <Monitor>
+      <Location>0,0</Location>
+      <Size>3440,1440</Size>
+      <Hidden>False</Hidden>
+      <Orientation>DMDO_DEFAULT</Orientation>
+      <AlwaysOnTop>True</AlwaysOnTop>
+      <Background />
+      <Children />
+    </Monitor>
+    <Monitor>
+      <Location>3440,0</Location>
+      <Size>1920,1080</Size>
+      <Hidden>False</Hidden>
+      <Orientation>DMDO_180</Orientation>
+      <AlwaysOnTop>True</AlwaysOnTop>
+      <Background />
+      <Children>
+        <Control TypeIdentifier="F16.MFD" Name="MFD LEFT" SnapTarget="True" Locked="False">
+          <Location>60,140</Location>
+          <Size>800,800</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="F16.MFD" Name="MFD RIGHT" SnapTarget="True" Locked="False">
+          <Location>1060,140</Location>
+          <Size>800,800</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.PushButton" Name="A-A" SnapTarget="True" Locked="False">
+          <Location>1106,20</Location>
+          <Size>100,100</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>{F-16C}/Images/a-a.png</Image>
+          <PushedImage>{F-16C}/Images/a-a-press.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.PushButton" Name="A-G" SnapTarget="True" Locked="False">
+          <Location>1237,20</Location>
+          <Size>100,100</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>{F-16C}/Images/a-g.png</Image>
+          <PushedImage>{F-16C}/Images/a-g-press.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.PushButton" Name="LIST" SnapTarget="True" Locked="False">
+          <Location>974,20</Location>
+          <Size>100,100</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>{F-16C}/Images/list.png</Image>
+          <PushedImage>{F-16C}/Images/list-pressed.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.PushButton" Name="IFF" SnapTarget="True" Locked="False">
+          <Location>832,20</Location>
+          <Size>100,100</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>{F-16C}/Images/iff.png</Image>
+          <PushedImage>{F-16C}/Images/iff-press.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.PushButton" Name="COM 2" SnapTarget="True" Locked="False">
+          <Location>692,20</Location>
+          <Size>100,100</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>{F-16C}/Images/comm2.png</Image>
+          <PushedImage>{F-16C}/Images/comm2-press.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.PushButton" Name="COM 1" SnapTarget="True" Locked="False">
+          <Location>552,20</Location>
+          <Size>100,100</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>{F-16C}/Images/comm1.png</Image>
+          <PushedImage>{F-16C}/Images/comm1-press.png</PushedImage>
+          <Children />
+        </Control>
+      </Children>
+    </Monitor>
+  </Monitors>
+  <Interfaces>
+    <Interface TypeIdentifier="Helios.Base.ProfileInterface" Name="Profile" />
+    <Interface TypeIdentifier="Helios.Base.Keyboard" Name="Keyboard">
+      <KeyDelay>30</KeyDelay>
+    </Interface>
+    <Interface TypeIdentifier="Helios.DCSInterfaceFile" Name="DCS F-16C_50" />
+  </Interfaces>
+  <Bindings>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB1;Helios.Base.PushButton;OSB1" Name="OSB1.pushed" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB1;Helios.Base.PushButton;OSB1" Name="OSB1.push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB1;Helios.Base.PushButton;OSB1" Name="OSB1.released" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB1;Helios.Base.PushButton;OSB1" Name="OSB1.release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB1;Helios.Base.PushButton;OSB1" Name="OSB1.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.push.MFD Left Button 1" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB1;Helios.Base.PushButton;OSB1" Name="OSB1.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.release.MFD Left Button 1" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB2;Helios.Base.PushButton;OSB2" Name="OSB2.pushed" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB2;Helios.Base.PushButton;OSB2" Name="OSB2.push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB2;Helios.Base.PushButton;OSB2" Name="OSB2.released" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB2;Helios.Base.PushButton;OSB2" Name="OSB2.release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB2;Helios.Base.PushButton;OSB2" Name="OSB2.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.push.MFD Left Button 2" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB2;Helios.Base.PushButton;OSB2" Name="OSB2.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.release.MFD Left Button 2" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB3;Helios.Base.PushButton;OSB3" Name="OSB3.pushed" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB3;Helios.Base.PushButton;OSB3" Name="OSB3.push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB3;Helios.Base.PushButton;OSB3" Name="OSB3.released" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB3;Helios.Base.PushButton;OSB3" Name="OSB3.release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB3;Helios.Base.PushButton;OSB3" Name="OSB3.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.push.MFD Left Button 3" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB3;Helios.Base.PushButton;OSB3" Name="OSB3.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.release.MFD Left Button 3" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB4;Helios.Base.PushButton;OSB4" Name="OSB4.pushed" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB4;Helios.Base.PushButton;OSB4" Name="OSB4.push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB4;Helios.Base.PushButton;OSB4" Name="OSB4.released" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB4;Helios.Base.PushButton;OSB4" Name="OSB4.release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB4;Helios.Base.PushButton;OSB4" Name="OSB4.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.push.MFD Left Button 4" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB4;Helios.Base.PushButton;OSB4" Name="OSB4.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.release.MFD Left Button 4" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB5;Helios.Base.PushButton;OSB5" Name="OSB5.pushed" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB5;Helios.Base.PushButton;OSB5" Name="OSB5.push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB5;Helios.Base.PushButton;OSB5" Name="OSB5.released" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB5;Helios.Base.PushButton;OSB5" Name="OSB5.release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB5;Helios.Base.PushButton;OSB5" Name="OSB5.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.push.MFD Left Button 5" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB5;Helios.Base.PushButton;OSB5" Name="OSB5.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.release.MFD Left Button 5" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB6;Helios.Base.PushButton;OSB6" Name="OSB6.pushed" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB6;Helios.Base.PushButton;OSB6" Name="OSB6.push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB6;Helios.Base.PushButton;OSB6" Name="OSB6.released" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB6;Helios.Base.PushButton;OSB6" Name="OSB6.release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB6;Helios.Base.PushButton;OSB6" Name="OSB6.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.push.MFD Left Button 6" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB6;Helios.Base.PushButton;OSB6" Name="OSB6.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.release.MFD Left Button 6" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB7;Helios.Base.PushButton;OSB7" Name="OSB7.pushed" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB8;Helios.Base.PushButton;OSB8" Name="OSB8.push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB7;Helios.Base.PushButton;OSB7" Name="OSB7.released" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB8;Helios.Base.PushButton;OSB8" Name="OSB8.release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB7;Helios.Base.PushButton;OSB7" Name="OSB7.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.push.MFD Left Button 7" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB7;Helios.Base.PushButton;OSB7" Name="OSB7.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.release.MFD Left Button 7" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB8;Helios.Base.PushButton;OSB8" Name="OSB8.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.push.MFD Left Button 8" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB8;Helios.Base.PushButton;OSB8" Name="OSB8.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.release.MFD Left Button 8" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB9;Helios.Base.PushButton;OSB9" Name="OSB9.pushed" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB9;Helios.Base.PushButton;OSB9" Name="OSB9.push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB9;Helios.Base.PushButton;OSB9" Name="OSB9.released" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB9;Helios.Base.PushButton;OSB9" Name="OSB9.release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB9;Helios.Base.PushButton;OSB9" Name="OSB9.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.push.MFD Left Button 9" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB9;Helios.Base.PushButton;OSB9" Name="OSB9.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.release.MFD Left Button 9" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB10;Helios.Base.PushButton;OSB10" Name="OSB10.pushed" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB10;Helios.Base.PushButton;OSB10" Name="OSB10.push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB10;Helios.Base.PushButton;OSB10" Name="OSB10.released" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB10;Helios.Base.PushButton;OSB10" Name="OSB10.release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB10;Helios.Base.PushButton;OSB10" Name="OSB10.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.push.MFD Left Button 10" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB10;Helios.Base.PushButton;OSB10" Name="OSB10.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.release.MFD Left Button 10" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB15;Helios.Base.PushButton;OSB15" Name="OSB15.pushed" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB15;Helios.Base.PushButton;OSB15" Name="OSB15.push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB15;Helios.Base.PushButton;OSB15" Name="OSB15.released" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB15;Helios.Base.PushButton;OSB15" Name="OSB15.release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB15;Helios.Base.PushButton;OSB15" Name="OSB15.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.push.MFD Left Button 15" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB15;Helios.Base.PushButton;OSB15" Name="OSB15.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.release.MFD Left Button 15" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB14;Helios.Base.PushButton;OSB14" Name="OSB14.pushed" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB14;Helios.Base.PushButton;OSB14" Name="OSB14.push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB14;Helios.Base.PushButton;OSB14" Name="OSB14.released" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB14;Helios.Base.PushButton;OSB14" Name="OSB14.release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB14;Helios.Base.PushButton;OSB14" Name="OSB14.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.push.MFD Left Button 14" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB14;Helios.Base.PushButton;OSB14" Name="OSB14.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.release.MFD Left Button 14" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB13;Helios.Base.PushButton;OSB13" Name="OSB13.pushed" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB13;Helios.Base.PushButton;OSB13" Name="OSB13.push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB13;Helios.Base.PushButton;OSB13" Name="OSB13.released" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB13;Helios.Base.PushButton;OSB13" Name="OSB13.release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB13;Helios.Base.PushButton;OSB13" Name="OSB13.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.push.MFD Left Button 13" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB13;Helios.Base.PushButton;OSB13" Name="OSB13.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.release.MFD Left Button 13" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB12;Helios.Base.PushButton;OSB12" Name="OSB12.pushed" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB12;Helios.Base.PushButton;OSB12" Name="OSB12.push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB12;Helios.Base.PushButton;OSB12" Name="OSB12.released" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB12;Helios.Base.PushButton;OSB12" Name="OSB12.release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB12;Helios.Base.PushButton;OSB12" Name="OSB12.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.push.MFD Left Button 12" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB12;Helios.Base.PushButton;OSB12" Name="OSB12.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.release.MFD Left Button 12" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB11;Helios.Base.PushButton;OSB11" Name="OSB11.pushed" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB11;Helios.Base.PushButton;OSB11" Name="OSB11.push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB11;Helios.Base.PushButton;OSB11" Name="OSB11.released" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB11;Helios.Base.PushButton;OSB11" Name="OSB11.release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB11;Helios.Base.PushButton;OSB11" Name="OSB11.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.push.MFD Left Button 11" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB11;Helios.Base.PushButton;OSB11" Name="OSB11.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.release.MFD Left Button 11" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB20;Helios.Base.PushButton;OSB20" Name="OSB20.pushed" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB20;Helios.Base.PushButton;OSB20" Name="OSB20.push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB20;Helios.Base.PushButton;OSB20" Name="OSB20.released" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB20;Helios.Base.PushButton;OSB20" Name="OSB20.release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB20;Helios.Base.PushButton;OSB20" Name="OSB20.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.push.MFD Left Button 20" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB20;Helios.Base.PushButton;OSB20" Name="OSB20.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.release.MFD Left Button 20" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB19;Helios.Base.PushButton;OSB19" Name="OSB19.pushed" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB19;Helios.Base.PushButton;OSB19" Name="OSB19.push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB19;Helios.Base.PushButton;OSB19" Name="OSB19.released" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB19;Helios.Base.PushButton;OSB19" Name="OSB19.release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB19;Helios.Base.PushButton;OSB19" Name="OSB19.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.push.MFD Left Button 19" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB19;Helios.Base.PushButton;OSB19" Name="OSB19.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.release.MFD Left Button 19" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB18;Helios.Base.PushButton;OSB18" Name="OSB18.pushed" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB18;Helios.Base.PushButton;OSB18" Name="OSB18.push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB18;Helios.Base.PushButton;OSB18" Name="OSB18.released" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB18;Helios.Base.PushButton;OSB18" Name="OSB18.release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB18;Helios.Base.PushButton;OSB18" Name="OSB18.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.push.MFD Left Button 18" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB18;Helios.Base.PushButton;OSB18" Name="OSB18.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.release.MFD Left Button 18" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB17;Helios.Base.PushButton;OSB17" Name="OSB17.pushed" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB17;Helios.Base.PushButton;OSB17" Name="OSB17.push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB17;Helios.Base.PushButton;OSB17" Name="OSB17.released" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB17;Helios.Base.PushButton;OSB17" Name="OSB17.release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB17;Helios.Base.PushButton;OSB17" Name="OSB17.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.push.MFD Left Button 17" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB17;Helios.Base.PushButton;OSB17" Name="OSB17.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.release.MFD Left Button 17" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB16;Helios.Base.PushButton;OSB16" Name="OSB16.pushed" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB16;Helios.Base.PushButton;OSB16" Name="OSB16.push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB16;Helios.Base.PushButton;OSB16" Name="OSB16.released" />
+      <Action Target="Visual;Monitor 2.MFD LEFT.OSB16;Helios.Base.PushButton;OSB16" Name="OSB16.release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB16;Helios.Base.PushButton;OSB16" Name="OSB16.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.push.MFD Left Button 16" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.OSB16;Helios.Base.PushButton;OSB16" Name="OSB16.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.release.MFD Left Button 16" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB1;Helios.Base.PushButton;OSB1" Name="OSB1.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.push.MFD Right Button 1" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB1;Helios.Base.PushButton;OSB1" Name="OSB1.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right Button 1" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB2;Helios.Base.PushButton;OSB2" Name="OSB2.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.push.MFD Right Button 2" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB2;Helios.Base.PushButton;OSB2" Name="OSB2.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right Button 2" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB3;Helios.Base.PushButton;OSB3" Name="OSB3.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.push.MFD Right Button 3" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB3;Helios.Base.PushButton;OSB3" Name="OSB3.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right Button 3" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB4;Helios.Base.PushButton;OSB4" Name="OSB4.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.push.MFD Right Button 4" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB4;Helios.Base.PushButton;OSB4" Name="OSB4.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right Button 4" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB5;Helios.Base.PushButton;OSB5" Name="OSB5.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.push.MFD Right Button 5" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB5;Helios.Base.PushButton;OSB5" Name="OSB5.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right Button 5" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB6;Helios.Base.PushButton;OSB6" Name="OSB6.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.push.MFD Right Button 6" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB6;Helios.Base.PushButton;OSB6" Name="OSB6.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right Button 6" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB7;Helios.Base.PushButton;OSB7" Name="OSB7.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.push.MFD Right Button 7" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB7;Helios.Base.PushButton;OSB7" Name="OSB7.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right Button 7" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB8;Helios.Base.PushButton;OSB8" Name="OSB8.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.push.MFD Right Button 8" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB8;Helios.Base.PushButton;OSB8" Name="OSB8.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right Button 8" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB9;Helios.Base.PushButton;OSB9" Name="OSB9.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.push.MFD Right Button 9" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB9;Helios.Base.PushButton;OSB9" Name="OSB9.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right Button 9" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB10;Helios.Base.PushButton;OSB10" Name="OSB10.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.push.MFD Right Button 10" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB10;Helios.Base.PushButton;OSB10" Name="OSB10.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right Button 10" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB15;Helios.Base.PushButton;OSB15" Name="OSB15.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.push.MFD Right Button 15" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB15;Helios.Base.PushButton;OSB15" Name="OSB15.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right Button 15" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB14;Helios.Base.PushButton;OSB14" Name="OSB14.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.push.MFD Right Button 14" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB14;Helios.Base.PushButton;OSB14" Name="OSB14.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right Button 14" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB13;Helios.Base.PushButton;OSB13" Name="OSB13.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.push.MFD Right Button 13" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB13;Helios.Base.PushButton;OSB13" Name="OSB13.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right Button 13" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB12;Helios.Base.PushButton;OSB12" Name="OSB12.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.push.MFD Right Button 12" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB12;Helios.Base.PushButton;OSB12" Name="OSB12.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right Button 12" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB11;Helios.Base.PushButton;OSB11" Name="OSB11.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.push.MFD Right Button 11" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB11;Helios.Base.PushButton;OSB11" Name="OSB11.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right Button 11" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB20;Helios.Base.PushButton;OSB20" Name="OSB20.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.push.MFD Right Button 20" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB20;Helios.Base.PushButton;OSB20" Name="OSB20.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right Button 20" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB19;Helios.Base.PushButton;OSB19" Name="OSB19.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.push.MFD Right Button 19" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB19;Helios.Base.PushButton;OSB19" Name="OSB19.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right Button 19" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB18;Helios.Base.PushButton;OSB18" Name="OSB18.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.push.MFD Right Button 18" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB18;Helios.Base.PushButton;OSB18" Name="OSB18.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right Button 18" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB17;Helios.Base.PushButton;OSB17" Name="OSB17.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.push.MFD Right Button 17" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB17;Helios.Base.PushButton;OSB17" Name="OSB17.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right Button 17" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB16;Helios.Base.PushButton;OSB16" Name="OSB16.pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.push.MFD Right Button 16" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB16;Helios.Base.PushButton;OSB16" Name="OSB16.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right Button 16" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.A-A;Helios.Base.PushButton;A-A" Name="pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.push.ICP Master Mode Button, A-A" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.A-A;Helios.Base.PushButton;A-A" Name="released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.release.ICP Master Mode Button, A-A" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.A-G;Helios.Base.PushButton;A-G" Name="pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.push.ICP Master Mode Button, A-G" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.A-G;Helios.Base.PushButton;A-G" Name="released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.release.ICP Master Mode Button, A-G" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.LIST;Helios.Base.PushButton;LIST" Name="pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.push.ICP LIST Override Button, LIST" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.LIST;Helios.Base.PushButton;LIST" Name="released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.release.ICP LIST Override Button, LIST" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.IFF;Helios.Base.PushButton;IFF" Name="pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.push.ICP IFF Override Button, IFF" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.IFF;Helios.Base.PushButton;IFF" Name="released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.release.ICP IFF Override Button, IFF" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.COM 2;Helios.Base.PushButton;COM 2" Name="pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.push.ICP COM Override Button, COM2(VHF)" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.COM 2;Helios.Base.PushButton;COM 2" Name="released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.release.ICP COM Override Button, COM2(VHF)" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.COM 1;Helios.Base.PushButton;COM 1" Name="pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.push.ICP COM Override Button, COM1(UHF)" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.COM 1;Helios.Base.PushButton;COM 1" Name="released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.release.ICP COM Override Button, COM1(UHF)" />
+      <StaticValue />
+    </Binding>
+  </Bindings>
+</HeliosProfile>
