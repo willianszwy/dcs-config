@@ -20,20 +20,20 @@
       <Background />
       <Children>
         <Control TypeIdentifier="F16.MFD" Name="MFD LEFT" SnapTarget="True" Locked="False">
-          <Location>60,140</Location>
-          <Size>800,800</Size>
+          <Location>7,318</Location>
+          <Size>756,756</Size>
           <Hidden>False</Hidden>
           <Children />
         </Control>
         <Control TypeIdentifier="F16.MFD" Name="MFD RIGHT" SnapTarget="True" Locked="False">
-          <Location>1060,140</Location>
-          <Size>800,800</Size>
+          <Location>1150,318</Location>
+          <Size>756,756</Size>
           <Hidden>False</Hidden>
           <Children />
         </Control>
         <Control TypeIdentifier="Helios.Base.PushButton" Name="A-A" SnapTarget="True" Locked="False">
-          <Location>1106,20</Location>
-          <Size>100,100</Size>
+          <Location>983,8</Location>
+          <Size>80,80</Size>
           <Hidden>False</Hidden>
           <Type>Momentary</Type>
           <Image>{F-16C}/Images/a-a.png</Image>
@@ -41,8 +41,8 @@
           <Children />
         </Control>
         <Control TypeIdentifier="Helios.Base.PushButton" Name="A-G" SnapTarget="True" Locked="False">
-          <Location>1237,20</Location>
-          <Size>100,100</Size>
+          <Location>1070,8</Location>
+          <Size>80,80</Size>
           <Hidden>False</Hidden>
           <Type>Momentary</Type>
           <Image>{F-16C}/Images/a-g.png</Image>
@@ -50,8 +50,8 @@
           <Children />
         </Control>
         <Control TypeIdentifier="Helios.Base.PushButton" Name="LIST" SnapTarget="True" Locked="False">
-          <Location>974,20</Location>
-          <Size>100,100</Size>
+          <Location>896,20</Location>
+          <Size>60,60</Size>
           <Hidden>False</Hidden>
           <Type>Momentary</Type>
           <Image>{F-16C}/Images/list.png</Image>
@@ -59,8 +59,8 @@
           <Children />
         </Control>
         <Control TypeIdentifier="Helios.Base.PushButton" Name="IFF" SnapTarget="True" Locked="False">
-          <Location>832,20</Location>
-          <Size>100,100</Size>
+          <Location>824,20</Location>
+          <Size>60,60</Size>
           <Hidden>False</Hidden>
           <Type>Momentary</Type>
           <Image>{F-16C}/Images/iff.png</Image>
@@ -68,8 +68,8 @@
           <Children />
         </Control>
         <Control TypeIdentifier="Helios.Base.PushButton" Name="COM 2" SnapTarget="True" Locked="False">
-          <Location>692,20</Location>
-          <Size>100,100</Size>
+          <Location>751,20</Location>
+          <Size>60,60</Size>
           <Hidden>False</Hidden>
           <Type>Momentary</Type>
           <Image>{F-16C}/Images/comm2.png</Image>
@@ -77,8 +77,8 @@
           <Children />
         </Control>
         <Control TypeIdentifier="Helios.Base.PushButton" Name="COM 1" SnapTarget="True" Locked="False">
-          <Location>552,20</Location>
-          <Size>100,100</Size>
+          <Location>675,20</Location>
+          <Size>60,60</Size>
           <Hidden>False</Hidden>
           <Type>Momentary</Type>
           <Image>{F-16C}/Images/comm1.png</Image>
@@ -86,8 +86,8 @@
           <Children />
         </Control>
         <Control TypeIdentifier="Helios.Base.PushButton" Name="Tactile Square - Light" SnapTarget="True" Locked="False">
-          <Location>932,262</Location>
-          <Size>50,50</Size>
+          <Location>811,347</Location>
+          <Size>70,70</Size>
           <Hidden>False</Hidden>
           <Type>Momentary</Type>
           <Image>{Helios}/Images/Buttons/tactile-light-square.png</Image>
@@ -95,12 +95,258 @@
           <Children />
         </Control>
         <Control TypeIdentifier="Helios.Base.PushButton" Name="Tactile Square - Light 1" SnapTarget="True" Locked="False">
-          <Location>932,349</Location>
-          <Size>50,50</Size>
+          <Location>811,423</Location>
+          <Size>70,70</Size>
           <Hidden>False</Hidden>
           <Type>Momentary</Type>
           <Image>{Helios}/Images/Buttons/tactile-light-square.png</Image>
           <PushedImage>{Helios}/Images/Buttons/tactile-light-square-in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.ViewportExtent" Name="F16C DED" SnapTarget="True" Locked="False">
+          <FillBackground>True</FillBackground>
+          <BackgroundColor>#801FC06F</BackgroundColor>
+          <FontColor>#FFFFFFFF</FontColor>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>12</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>F16C DED</Text>
+          <ScalingMode>None</ScalingMode>
+          <Location>1237,57</Location>
+          <Size>517,175</Size>
+          <Hidden>False</Hidden>
+          <EffectsExclusion>True</EffectsExclusion>
+          <ViewportName>F_16C_DED</ViewportName>
+          <RequiresPatches>True</RequiresPatches>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.ViewportExtent" Name="F16C LEFT MFCD" SnapTarget="True" Locked="False">
+          <FillBackground>True</FillBackground>
+          <BackgroundColor>#801FC06F</BackgroundColor>
+          <FontColor>#FFFFFFFF</FontColor>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>12</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>F16C LEFT MFCD</Text>
+          <ScalingMode>None</ScalingMode>
+          <Location>111,423</Location>
+          <Size>550,550</Size>
+          <Hidden>False</Hidden>
+          <EffectsExclusion>True</EffectsExclusion>
+          <ViewportName>F_16C_LEFT_MFCD</ViewportName>
+          <RequiresPatches>True</RequiresPatches>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.ViewportExtent" Name="F16C RIGHT MFCD" SnapTarget="True" Locked="False">
+          <FillBackground>True</FillBackground>
+          <BackgroundColor>#801FC06F</BackgroundColor>
+          <FontColor>#FFFFFFFF</FontColor>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>12</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>F16C RIGHT MFCD</Text>
+          <ScalingMode>None</ScalingMode>
+          <Location>1252,423</Location>
+          <Size>550,550</Size>
+          <Hidden>False</Hidden>
+          <EffectsExclusion>True</EffectsExclusion>
+          <ViewportName>F_16C_RIGHT_MFCD</ViewportName>
+          <RequiresPatches>True</RequiresPatches>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.ViewportExtent" Name="F16C RWR" SnapTarget="True" Locked="False">
+          <FillBackground>True</FillBackground>
+          <BackgroundColor>#801FC06F</BackgroundColor>
+          <FontColor>#FFFFFFFF</FontColor>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>12</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>F16C RWR</Text>
+          <ScalingMode>None</ScalingMode>
+          <Location>350,8</Location>
+          <Size>296,296</Size>
+          <Hidden>False</Hidden>
+          <EffectsExclusion>True</EffectsExclusion>
+          <ViewportName>F_16C_RWR</ViewportName>
+          <RequiresPatches>True</RequiresPatches>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.PushButton" Name="1" SnapTarget="True" Locked="False">
+          <Location>791,100</Location>
+          <Size>70,70</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>{F-16C}/Images/icp-1.png</Image>
+          <PushedImage>{F-16C}/Images/icp-1-press.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.PushButton" Name="2" SnapTarget="True" Locked="False">
+          <Location>873,100</Location>
+          <Size>70,70</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>{F-16C}/Images/icp-2.png</Image>
+          <PushedImage>{F-16C}/Images/icp-2-press.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.PushButton" Name="3" SnapTarget="True" Locked="False">
+          <Location>956,100</Location>
+          <Size>70,70</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>{F-16C}/Images/icp-3.png</Image>
+          <PushedImage>{F-16C}/Images/icp-3-press.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.PushButton" Name="4" SnapTarget="True" Locked="False">
+          <Location>791,182</Location>
+          <Size>70,70</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>{F-16C}/Images/icp-4.png</Image>
+          <PushedImage>{F-16C}/Images/icp-4-press.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.PushButton" Name="5" SnapTarget="True" Locked="False">
+          <Location>873,182</Location>
+          <Size>70,70</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>{F-16C}/Images/icp-5.png</Image>
+          <PushedImage>{F-16C}/Images/icp-5-press.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.PushButton" Name="6" SnapTarget="True" Locked="False">
+          <Location>956,178</Location>
+          <Size>70,70</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>{F-16C}/Images/icp-6.png</Image>
+          <PushedImage>{F-16C}/Images/icp-6-press.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.PushButton" Name="7" SnapTarget="True" Locked="False">
+          <Location>791,260</Location>
+          <Size>70,70</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>{F-16C}/Images/icp-7.png</Image>
+          <PushedImage>{F-16C}/Images/icp-7-press.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.PushButton" Name="8" SnapTarget="True" Locked="False">
+          <Location>873,260</Location>
+          <Size>70,70</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>{F-16C}/Images/icp-8.png</Image>
+          <PushedImage>{F-16C}/Images/icp-8-press.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.PushButton" Name="9" SnapTarget="True" Locked="False">
+          <Location>956,260</Location>
+          <Size>70,70</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>{F-16C}/Images/icp-9.png</Image>
+          <PushedImage>{F-16C}/Images/icp-9-press.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.PushButton" Name="RCL" SnapTarget="True" Locked="False">
+          <Location>1040,100</Location>
+          <Size>70,70</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>{F-16C}/Images/ipc-rcl.png</Image>
+          <PushedImage>{F-16C}/Images/ipc-rcl-press.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.PushButton" Name="ENTR" SnapTarget="True" Locked="False">
+          <Location>1040,178</Location>
+          <Size>70,70</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>{F-16C}/Images/icp-enter.png</Image>
+          <PushedImage>{F-16C}/Images/icp-enter-press.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.PushButton" Name="0" SnapTarget="True" Locked="False">
+          <Location>1040,260</Location>
+          <Size>70,70</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>{F-16C}/Images/icp-0.png</Image>
+          <PushedImage>{F-16C}/Images/icp-0-press.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.RockerSwitch" Name="Arrows - Dark" SnapTarget="True" Locked="False">
+          <Location>932,347</Location>
+          <Size>73,147</Size>
+          <Hidden>False</Hidden>
+          <SwitchType>MomOnMom</SwitchType>
+          <Orientation>Vertical</Orientation>
+          <ClickType>Touch</ClickType>
+          <PositionOneImage>{Helios}/Images/Rockers/arrows-dark-up.png</PositionOneImage>
+          <PositionTwoImage>{Helios}/Images/Rockers/arrows-dark-norm.png</PositionTwoImage>
+          <PositionThreeImage>{Helios}/Images/Rockers/arrows-dark-down.png</PositionThreeImage>
+          <DefaultPosition>Two</DefaultPosition>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.RockerSwitch" Name="Plus Minus - Dark - Horizontal" SnapTarget="True" Locked="False">
+          <Location>896,494</Location>
+          <Size>156,78</Size>
+          <Hidden>False</Hidden>
+          <SwitchType>MomOnMom</SwitchType>
+          <Orientation>Horizontal</Orientation>
+          <ClickType>Touch</ClickType>
+          <PositionOneImage>{Helios}/Images/Rockers/plusminus-dark-horiz-left.png</PositionOneImage>
+          <PositionTwoImage>{Helios}/Images/Rockers/plusminus-dark-horiz-norm.png</PositionTwoImage>
+          <PositionThreeImage>{Helios}/Images/Rockers/plusminus-dark-horiz-right.png</PositionThreeImage>
+          <DefaultPosition>Two</DefaultPosition>
           <Children />
         </Control>
       </Children>
@@ -112,6 +358,8 @@
       <KeyDelay>30</KeyDelay>
     </Interface>
     <Interface TypeIdentifier="Helios.DCSInterfaceFile" Name="DCS F-16C_50" />
+    <Interface TypeIdentifier="Patching.DCS.MonitorSetup" Name="DCS Monitor Setup" />
+    <Interface TypeIdentifier="Patching.DCS.AdditionalViewports" Name="DCS Additional Viewports" />
   </Interfaces>
   <Bindings>
     <Binding BypassCascadingTriggers="True">
@@ -773,6 +1021,166 @@
       <Trigger Source="Visual;Monitor 2.Tactile Square - Light 1;Helios.Base.PushButton;Tactile Square - Light 1" Name="pushed" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.set.ICP DED Increment/Decrement Switch" />
       <StaticValue>3</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.1;Helios.Base.PushButton;1" Name="pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.push.ICP Priority Function Button, 1(T-ILS)" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.1;Helios.Base.PushButton;1" Name="released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.release.ICP Priority Function Button, 1(T-ILS)" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.2;Helios.Base.PushButton;2" Name="pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.push.ICP Priority Function Button, 2/N(ALOW)" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.2;Helios.Base.PushButton;2" Name="released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.release.ICP Priority Function Button, 2/N(ALOW)" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.3;Helios.Base.PushButton;3" Name="pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.push.ICP Priority Function Button, 3" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.3;Helios.Base.PushButton;3" Name="released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.release.ICP Priority Function Button, 3" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.4;Helios.Base.PushButton;4" Name="pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.push.ICP Priority Function Button, 4/W(STPT)" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.4;Helios.Base.PushButton;4" Name="released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.release.ICP Priority Function Button, 4/W(STPT)" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.5;Helios.Base.PushButton;5" Name="pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.push.ICP Priority Function Button, 5(CRUS)" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.5;Helios.Base.PushButton;5" Name="released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.release.ICP Priority Function Button, 5(CRUS)" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.6;Helios.Base.PushButton;6" Name="pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.push.ICP Priority Function Button, 6/E(TIME)" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.6;Helios.Base.PushButton;6" Name="released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.release.ICP Priority Function Button, 6/E(TIME)" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.7;Helios.Base.PushButton;7" Name="pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.push.ICP Priority Function Button, 7(MARK)" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.7;Helios.Base.PushButton;7" Name="released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.release.ICP Priority Function Button, 7(MARK)" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.8;Helios.Base.PushButton;8" Name="pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.push.ICP Priority Function Button, 8/S(FIX)" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.8;Helios.Base.PushButton;8" Name="released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.release.ICP Priority Function Button, 8/S(FIX)" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.9;Helios.Base.PushButton;9" Name="pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.push.ICP Priority Function Button, 9(A-CAL)" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.9;Helios.Base.PushButton;9" Name="released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.release.ICP Priority Function Button, 9(A-CAL)" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.RCL;Helios.Base.PushButton;RCL" Name="pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.push.ICP Recall Button, RCL" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.RCL;Helios.Base.PushButton;RCL" Name="released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.release.ICP Recall Button, RCL" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.ENTR;Helios.Base.PushButton;ENTR" Name="pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.push.ICP Enter Button, ENTR" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.ENTR;Helios.Base.PushButton;ENTR" Name="released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.release.ICP Enter Button, ENTR" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.0;Helios.Base.PushButton;0" Name="pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.push.ICP Priority Function Button, 0(M-SEL)" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.0;Helios.Base.PushButton;0" Name="released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.release.ICP Priority Function Button, 0(M-SEL)" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.Arrows - Dark;Helios.Base.RockerSwitch;Arrows - Dark" Name="position one.entered" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.push.ICP Data Control Switch - UP [Button]" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.Arrows - Dark;Helios.Base.RockerSwitch;Arrows - Dark" Name="position one.exited" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.release.ICP Data Control Switch - UP [Button]" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.Arrows - Dark;Helios.Base.RockerSwitch;Arrows - Dark" Name="position two.entered" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.push.ICP Data Control Switch - DOWN [Button]" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.Arrows - Dark;Helios.Base.RockerSwitch;Arrows - Dark" Name="position two.exited" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.release.ICP Data Control Switch - DOWN [Button]" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.Plus Minus - Dark - Horizontal;Helios.Base.RockerSwitch;Plus Minus - Dark - Horizontal" Name="position one.entered" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.push.ICP Data Control Switch - RET [Button]" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.Plus Minus - Dark - Horizontal;Helios.Base.RockerSwitch;Plus Minus - Dark - Horizontal" Name="position one.exited" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.release.ICP Data Control Switch - RET [Button]" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.Plus Minus - Dark - Horizontal;Helios.Base.RockerSwitch;Plus Minus - Dark - Horizontal" Name="position two.entered" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.push.ICP Data Control Switch - SEQ [Button]" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.Plus Minus - Dark - Horizontal;Helios.Base.RockerSwitch;Plus Minus - Dark - Horizontal" Name="position two.exited" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.release.ICP Data Control Switch - SEQ [Button]" />
+      <StaticValue />
     </Binding>
   </Bindings>
 </HeliosProfile>

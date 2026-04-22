@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HeliosProfile>
+  <Version>3</Version>
+  <Monitors>
+    <Monitor>
+      <Location>0,0</Location>
+      <Size>3440,1440</Size>
+      <Hidden>False</Hidden>
+      <Orientation>DMDO_DEFAULT</Orientation>
+      <AlwaysOnTop>True</AlwaysOnTop>
+      <Background />
+      <Children />
+    </Monitor>
+    <Monitor>
+      <Location>3440,0</Location>
+      <Size>1920,1080</Size>
+      <Hidden>False</Hidden>
+      <Orientation>DMDO_180</Orientation>
+      <AlwaysOnTop>True</AlwaysOnTop>
+      <Background />
+      <Children>
+        <Control TypeIdentifier="Helios.AH64D.MFD.PLTLEFT" Name="MFD Left (Pilot)" SnapTarget="True" Locked="False">
+          <Location>60,140</Location>
+          <Size>800,800</Size>
+          <Hidden>False</Hidden>
+          <EmbeddedViewportName>AH_64D_LEFT_MFCD_PLT</EmbeddedViewportName>
+          <RequiresPatches>True</RequiresPatches>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.AH64D.MFD.PLTRIGHT" Name="MFD Right (Pilot)" SnapTarget="True" Locked="False">
+          <Location>1060,140</Location>
+          <Size>800,800</Size>
+          <Hidden>False</Hidden>
+          <EmbeddedViewportName>AH_64D_RIGHT_MFCD_PLT</EmbeddedViewportName>
+          <RequiresPatches>True</RequiresPatches>
+          <Children />
+        </Control>
+      </Children>
+    </Monitor>
+  </Monitors>
+  <Interfaces>
+    <Interface TypeIdentifier="Helios.Base.ProfileInterface" Name="Profile" />
+    <Interface TypeIdentifier="Helios.Base.Keyboard" Name="Keyboard">
+      <KeyDelay>30</KeyDelay>
+    </Interface>
+    <Interface TypeIdentifier="Helios.AH64D" Name="DCS AH-64D Apache" />
+  </Interfaces>
+  <Bindings>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD Left (Pilot).Button T1;Helios.Base.PushButton;Button T1" Name="MFD Left (Pilot)_Button T1.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button T1" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD Left (Pilot).Button T1;Helios.Base.PushButton;Button T1" Name="MFD Left (Pilot)_Button T1.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button T1" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD Left (Pilot).Button T2;Helios.Base.PushButton;Button T2" Name="MFD Left (Pilot)_Button T2.pushed" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).push.Button T2" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD Left (Pilot).Button T2;Helios.Base.PushButton;Button T2" Name="MFD Left (Pilot)_Button T2.released" />
+      <Action Target="Interface;;Helios.AH64D;DCS AH-64D Apache" Name="MFD Left (Pilot).release.Button T2" />
+      <StaticValue />
+    </Binding>
+  </Bindings>
+</HeliosProfile>
