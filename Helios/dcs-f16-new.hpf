@@ -323,30 +323,43 @@
           <PushedImage>{F-16C}/Images/icp-0-press.png</PushedImage>
           <Children />
         </Control>
-        <Control TypeIdentifier="Helios.Base.RockerSwitch" Name="Arrows - Dark" SnapTarget="True" Locked="False">
-          <Location>932,347</Location>
-          <Size>73,147</Size>
+        <Control TypeIdentifier="Helios.Base.ViewportExtent" Name="F16C EHSI" SnapTarget="True" Locked="False">
+          <FillBackground>True</FillBackground>
+          <BackgroundColor>#801FC06F</BackgroundColor>
+          <FontColor>#FFFFFFFF</FontColor>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>12</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>F16C EHSI</Text>
+          <ScalingMode>None</ScalingMode>
+          <Location>759,630</Location>
+          <Size>391,391</Size>
           <Hidden>False</Hidden>
-          <SwitchType>MomOnMom</SwitchType>
-          <Orientation>Vertical</Orientation>
-          <ClickType>Touch</ClickType>
-          <PositionOneImage>{Helios}/Images/Rockers/arrows-dark-up.png</PositionOneImage>
-          <PositionTwoImage>{Helios}/Images/Rockers/arrows-dark-norm.png</PositionTwoImage>
-          <PositionThreeImage>{Helios}/Images/Rockers/arrows-dark-down.png</PositionThreeImage>
-          <DefaultPosition>Two</DefaultPosition>
+          <EffectsExclusion>True</EffectsExclusion>
+          <ViewportName>F_16C_EHSI</ViewportName>
+          <RequiresPatches>True</RequiresPatches>
           <Children />
         </Control>
-        <Control TypeIdentifier="Helios.Base.RockerSwitch" Name="Plus Minus - Dark - Horizontal" SnapTarget="True" Locked="False">
-          <Location>896,494</Location>
-          <Size>156,78</Size>
+        <Control TypeIdentifier="Helios.Base.HatSwitch" Name="DCS Switch" SnapTarget="True" Locked="False">
+          <Location>930,370</Location>
+          <Size>163,163</Size>
           <Hidden>False</Hidden>
-          <SwitchType>MomOnMom</SwitchType>
-          <Orientation>Horizontal</Orientation>
-          <ClickType>Touch</ClickType>
-          <PositionOneImage>{Helios}/Images/Rockers/plusminus-dark-horiz-left.png</PositionOneImage>
-          <PositionTwoImage>{Helios}/Images/Rockers/plusminus-dark-horiz-norm.png</PositionTwoImage>
-          <PositionThreeImage>{Helios}/Images/Rockers/plusminus-dark-horiz-right.png</PositionThreeImage>
-          <DefaultPosition>Two</DefaultPosition>
+          <CenterImage>{Helios}/Images/Hats/dcs-center.png</CenterImage>
+          <UpImage>{Helios}/Images/Hats/dcs-up.png</UpImage>
+          <DownImage>{Helios}/Images/Hats/dcs-down.png</DownImage>
+          <LeftImage>{Helios}/Images/Hats/dcs-left.png</LeftImage>
+          <RightImage>{Helios}/Images/Hats/dcs-right.png</RightImage>
           <Children />
         </Control>
       </Children>
@@ -1143,43 +1156,43 @@
       <StaticValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.Arrows - Dark;Helios.Base.RockerSwitch;Arrows - Dark" Name="position one.entered" />
+      <Trigger Source="Visual;Monitor 2.DCS Switch;Helios.Base.HatSwitch;DCS Switch" Name="up.entered" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.push.ICP Data Control Switch - UP [Button]" />
       <StaticValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.Arrows - Dark;Helios.Base.RockerSwitch;Arrows - Dark" Name="position one.exited" />
+      <Trigger Source="Visual;Monitor 2.DCS Switch;Helios.Base.HatSwitch;DCS Switch" Name="up.exited" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.release.ICP Data Control Switch - UP [Button]" />
       <StaticValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.Arrows - Dark;Helios.Base.RockerSwitch;Arrows - Dark" Name="position two.entered" />
+      <Trigger Source="Visual;Monitor 2.DCS Switch;Helios.Base.HatSwitch;DCS Switch" Name="down.entered" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.push.ICP Data Control Switch - DOWN [Button]" />
       <StaticValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.Arrows - Dark;Helios.Base.RockerSwitch;Arrows - Dark" Name="position two.exited" />
+      <Trigger Source="Visual;Monitor 2.DCS Switch;Helios.Base.HatSwitch;DCS Switch" Name="down.exited" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.release.ICP Data Control Switch - DOWN [Button]" />
       <StaticValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.Plus Minus - Dark - Horizontal;Helios.Base.RockerSwitch;Plus Minus - Dark - Horizontal" Name="position one.entered" />
-      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.push.ICP Data Control Switch - RET [Button]" />
-      <StaticValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.Plus Minus - Dark - Horizontal;Helios.Base.RockerSwitch;Plus Minus - Dark - Horizontal" Name="position one.exited" />
-      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.release.ICP Data Control Switch - RET [Button]" />
-      <StaticValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.Plus Minus - Dark - Horizontal;Helios.Base.RockerSwitch;Plus Minus - Dark - Horizontal" Name="position two.entered" />
+      <Trigger Source="Visual;Monitor 2.DCS Switch;Helios.Base.HatSwitch;DCS Switch" Name="right.entered" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.push.ICP Data Control Switch - SEQ [Button]" />
       <StaticValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.Plus Minus - Dark - Horizontal;Helios.Base.RockerSwitch;Plus Minus - Dark - Horizontal" Name="position two.exited" />
+      <Trigger Source="Visual;Monitor 2.DCS Switch;Helios.Base.HatSwitch;DCS Switch" Name="right.exited" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.release.ICP Data Control Switch - SEQ [Button]" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.DCS Switch;Helios.Base.HatSwitch;DCS Switch" Name="left.entered" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.push.ICP Data Control Switch - RET [Button]" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.DCS Switch;Helios.Base.HatSwitch;DCS Switch" Name="left.exited" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.release.ICP Data Control Switch - RET [Button]" />
       <StaticValue />
     </Binding>
   </Bindings>

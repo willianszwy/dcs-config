@@ -1,51 +1,78 @@
-# DCS World — Setup Multi-Monitor F-16C
+# DCS World — Setup Multi-Monitor (F-16C + AH-64D)
 
-Setup para exportar os MFDs do F-16C para um monitor secundário, com ajuste de brilho via ReShade e botões OSB clicáveis via Helios.
+Exporta MFDs do F-16C e do AH-64D Apache para monitor secundário, com ajuste de brilho via ReShade e botões OSB clicáveis via Helios.
 
 ## Ambiente
 
 | | |
 |---|---|
-| Monitor principal | 3440x1440 (ultrawide) — à esquerda |
-| Monitor secundário | 1920x1080 — à direita, alinhado no topo |
+| Monitor principal | 3440×1440 (ultrawide) — à esquerda |
+| Monitor secundário | 1920×1080 — à direita, alinhado no topo |
 | DCS instalado em | `G:\DCS World` |
-| Modo de tela | Janela (fullScreen = false) |
+| Modo de tela | Janela (`fullScreen = false`) |
+| Canvas total DCS | 5360×1440 (primário 0–3439 + secundário 3440–5359) |
 
 ---
 
-## 1. Exportar MFDs para o monitor secundário
+## Estrutura do repositório
+
+```
+├── README.md
+├── MonitorSetup/
+│   └── Helios.lua                      # config de monitores gerada pelo Helios (F-16 + AH-64)
+├── ReShade/
+│   ├── ReShadePreset.ini               # preset do ReShade (Tonemap para clarear monitor 2)
+│   └── UIMask.png                      # máscara 5360×1440 — direita toda preta (shader aplica ao monitor inteiro)
+└── Helios/
+    ├── dcs-f16.hpf                     # perfil original F-16C (legado)
+    ├── dcs-f16-new.hpf                 # perfil F-16C com todos os botões OSB mapeados
+    ├── dcs-ah64.hpf                    # perfil AH-64D com Pilot + CP/G, botões OSB e funções
+    └── ViewportSetups/
+        ├── dcs-f16-new.hvpf.json       # viewport setup F-16C para o Helios Profile Editor
+        └── dcs-ah64.hvpf.json          # viewport setup AH-64D para o Helios Profile Editor
+```
+
+---
+
+## 1. MonitorSetup — Exportar MFDs para o monitor 2
+
+O arquivo `Helios.lua` é gerado pelo Helios Profile Editor e define quais viewports o DCS exporta, dependendo da aeronave carregada.
 
 **Copiar o arquivo:**
 ```
-MonitorSetup/f16_2monitors.lua
+MonitorSetup/Helios.lua
 → C:\Users\[usuario]\Saved Games\DCS\Config\MonitorSetup\
 ```
 
 **Ativar no DCS:**
-`Options → System → Displays → Monitors Configuration → f16_2monitors`
+`Options → System → Displays → Monitors Configuration → Helios`
 
-### Layout no monitor 2
+### Viewports exportados — F-16C
 
-```
-|<170px>| LEFT_MFCD 580x580 |<370px>| RIGHT_MFCD 580x580 |<170px>|
-```
+| Viewport | x | y | width | height | Descrição |
+|---|---|---|---|---|---|
+| `F_16C_LEFT_MFCD` | 3551 | 423 | 550 | 550 | MFD esquerdo |
+| `F_16C_RIGHT_MFCD` | 4692 | 423 | 550 | 550 | MFD direito |
+| `F_16C_DED` | 4677 | 57 | 517 | 175 | Data Entry Display |
+| `F_16C_RWR` | 3790 | 8 | 296 | 296 | Radar Warning Receiver |
+| `F_16C_EHSI` | 4199 | 630 | 391 | 391 | EHSI (navegação) |
 
-> Os MFDs são exportados em 580x580 para alinhar com a área interna dos painéis do Helios (800x800 com bezel de ~110px).
+### Viewports exportados — AH-64D
 
-### Viewports disponíveis no F-16C
+| Viewport | x | y | width | height | Descrição |
+|---|---|---|---|---|---|
+| `AH_64D_LEFT_MFCD_PLT` | 3618 | 247 | 544 | 579 | MFD esquerdo (Pilot) |
+| `AH_64D_RIGHT_MFCD_PLT` | 4618 | 247 | 544 | 579 | MFD direito (Pilot) |
+| `AH_64D_LEFT_MFCD_CPG` | 3618 | 247 | 544 | 579 | MFD esquerdo (CP/G) |
+| `AH_64D_RIGHT_MFCD_CPG` | 4618 | 247 | 544 | 579 | MFD direito (CP/G) |
 
-| Viewport | Descrição | Exportável |
-|---|---|---|
-| `LEFT_MFCD` | MFD esquerdo | Sim |
-| `RIGHT_MFCD` | MFD direito | Sim |
-| `EHSI` | Indicador de navegação | Sim |
-| `DED` | Data Entry Display | Não |
+> Coordenadas são absolutas no canvas DCS (monitor 2 começa em x=3440).
 
 ---
 
-## 2. ReShade — brilho dos MFDs
+## 2. ReShade — clarear o monitor secundário
 
-Os MFDs exportados ficam mais escuros que o cockpit. O ReShade corrige isso.
+O monitor secundário fica mais escuro que o cockpit. O ReShade aplica Tonemap em toda a tela secundária para compensar.
 
 **Instalação:**
 1. Baixar em [reshade.me](https://reshade.me)
@@ -58,66 +85,116 @@ ReShade/ReShadePreset.ini  →  G:\DCS World\bin\
 ReShade/UIMask.png         →  G:\DCS World\bin\reshade-shaders\Textures\
 ```
 
+**Como a máscara funciona:**
+
+O `UIMask.png` tem 5360×1440 pixels (canvas inteiro do DCS):
+- Lado esquerdo (0–3439px): **branco** → shader NÃO aplica (monitor principal preservado)
+- Lado direito (3440–5359px): **preto** → shader aplica em toda a tela secundária
+
+Isso garante que o efeito clareia o monitor secundário inteiro uniformemente, sem criar diferença de cor entre áreas.
+
+**Gerar o UIMask.png manualmente (se necessário):**
+```powershell
+Add-Type -AssemblyName System.Drawing
+$bmp = New-Object System.Drawing.Bitmap(5360, 1440)
+$g = [System.Drawing.Graphics]::FromImage($bmp)
+$g.FillRectangle([System.Drawing.Brushes]::White, 0, 0, 3440, 1440)
+$g.FillRectangle([System.Drawing.Brushes]::Black, 3440, 0, 1920, 1440)
+$g.Dispose()
+$bmp.Save("G:\DCS World\bin\reshade-shaders\Textures\UIMask.png")
+$bmp.Dispose()
+```
+
 **Valores Tonemap configurados:**
 | Parâmetro | Valor |
 |---|---|
 | Gamma | 0.519 |
 | Exposure | 0.147 |
 
-> **Nota:** O UIMask está incluído para tentar isolar o efeito apenas nos MFDs.
-> Se o efeito aplicar no jogo inteiro, desativar `UIMask_Top` e `UIMask_Bottom`
-> no menu do ReShade (tecla Home) e deixar só o Tonemap ativo.
-
 ---
 
 ## 3. Helios — botões OSB clicáveis
 
-O Helios cria uma sobreposição transparente com os botões OSB clicáveis em cima dos MFDs exportados.
+O Helios cria uma sobreposição transparente com botões OSB clicáveis em cima dos MFDs exportados.
 
 **Instalação:**
 1. Baixar em [github.com/HeliosVirtualCockpit/Helios/releases](https://github.com/HeliosVirtualCockpit/Helios/releases)
 2. Instalar e abrir o **Helios Profile Editor**
 
-**Carregar o perfil:**
+**Copiar os perfis:**
 ```
-Helios/dcs-f16.hpf
-→ C:\Users\[usuario]\Documents\Helios\Profiles\
+Helios/dcs-f16-new.hpf  →  C:\Users\[usuario]\Documents\Helios\Profiles\
+Helios/dcs-ah64.hpf     →  C:\Users\[usuario]\Documents\Helios\Profiles\
 ```
 
-Abrir o Profile Editor → `Profile → Open` → selecionar `dcs-f16.hpf`
+**Copiar os viewport setups:**
+```
+Helios/ViewportSetups/dcs-f16-new.hvpf.json  →  C:\Users\[usuario]\Documents\Helios\Viewport Setups\
+Helios/ViewportSetups/dcs-ah64.hvpf.json     →  C:\Users\[usuario]\Documents\Helios\Viewport Setups\
+```
 
-**Posições dos painéis MFD no Helios (monitor 2):**
+### 3.1 Perfil F-16C (`dcs-f16-new.hpf`)
 
-| Painel | Left | Top | Width | Height |
-|---|---|---|---|---|
-| LEFT MFD | 60 | 140 | 800 | 800 |
-| RIGHT MFD | 1060 | 140 | 800 | 800 |
+**Botões mapeados por MFD:**
+- Linha T (topo): T1–T6
+- Linha R (direita): R1–R6
+- Linha B (base): B1–B6
+- Linha L (esquerda): L1–L6
+- Botões de função: OSB 1–20 conforme layout do F-16C
 
 **Interface DCS:**
 - No Profile Editor: `Profile → Add Interface → DCS F-16C`
 - Selecionar a pasta do DCS e clicar em **Install**
-- Isso configura o `Export.lua` automaticamente
 
-**Para usar:**
+### 3.2 Perfil AH-64D (`dcs-ah64.hpf`)
+
+**Botões mapeados por MFD (Pilot e CP/G):**
+- Linha T (topo): T1–T6
+- Linha R (direita): R1–R6
+- Linha B (base): B1/M(Menu), B2–B6
+- Linha L (esquerda): L1–L6
+- Botões de função: FCR, WPN, TSD, M/B1, A/C, COM, VID, Asterisk
+
+**Troca de assento (Pilot ↔ CP/G):**
+
+O perfil exibe os painéis MFD de um assento por vez. Há dois botões no monitor 2:
+- **Switch PLT** — mostra painéis do Pilot, oculta CP/G
+- **Switch CPG** — mostra painéis do CP/G, oculta Pilot
+
+Os painéis PLT e CPG ficam na mesma posição (sobrepostos); apenas um fica visível por vez.
+
+**Interface DCS:**
+- No Profile Editor: `Profile → Add Interface → DCS AH-64D Apache`
+- Selecionar a pasta do DCS e clicar em **Install**
+
+> **Importante:** O botão `B1` no AH-64D se chama `Button B1/M(Menu)` na interface DCS. O nome exato deve constar tanto no trigger quanto na action da binding — qualquer divergência faz o botão não responder.
+
+### 3.3 Iniciar o Helios
+
 1. Abrir o **Helios Control Center**
-2. Selecionar o perfil `dcs-f16`
+2. Selecionar o perfil desejado (`dcs-f16-new` ou `dcs-ah64`)
 3. Clicar em **Start**
-4. Entrar no DCS com o F-16C
+4. Entrar no DCS com a aeronave correspondente
 
 > O Helios Control Center deve ficar aberto durante toda a sessão de voo.
 
 ---
 
-## Estrutura do repositório
+## Troubleshooting
 
-```
-├── README.md
-├── INSTRUCOES.md
-├── MonitorSetup/
-│   └── f16_2monitors.lua       # config de monitores do DCS
-├── ReShade/
-│   ├── ReShadePreset.ini       # preset do ReShade
-│   └── UIMask.png              # máscara para isolar efeito nos MFDs
-└── Helios/
-    └── dcs-f16.hpf             # perfil do Helios com MFDs do F-16C
-```
+**MFDs não exportam para o monitor 2:**
+- Verificar se `Helios.lua` está em `Saved Games\DCS\Config\MonitorSetup\`
+- Verificar se a configuração "Helios" está selecionada em Options → System → Displays
+- O perfil `.hpf` precisa ter a interface `Patching.DCS.MonitorSetup` declarada
+
+**Botões OSB não funcionam:**
+- Verificar se o Helios Control Center está rodando com o perfil ativo
+- Verificar se a interface DCS foi instalada pelo Profile Editor (`Export.lua` configurado)
+- Checar o log do Helios em `C:\Users\[usuario]\Documents\Helios\Logs\` — erros de binding aparecem como `[nome] not found at interface`
+
+**Botão B1 do AH-64D não responde:**
+- O nome correto na interface é `Button B1/M(Menu)` — verificar se tanto o trigger quanto a action da binding usam esse nome exato
+
+**Shader aplica no jogo inteiro (não só no monitor 2):**
+- Verificar se o `UIMask.png` tem 5360×1440 e que os primeiros 3440px são brancos
+- Confirmar que o shader `UIMask_Top` e `UIMask_Bottom` estão ativos no menu do ReShade (tecla Home)
