@@ -343,7 +343,7 @@
           </Font>
           <Text>F16C EHSI</Text>
           <ScalingMode>None</ScalingMode>
-          <Location>759,630</Location>
+          <Location>759,582</Location>
           <Size>391,391</Size>
           <Hidden>False</Hidden>
           <EffectsExclusion>True</EffectsExclusion>
@@ -360,6 +360,45 @@
           <DownImage>{Helios}/Images/Hats/dcs-down.png</DownImage>
           <LeftImage>{Helios}/Images/Hats/dcs-left.png</LeftImage>
           <RightImage>{Helios}/Images/Hats/dcs-right.png</RightImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.RotaryEncoderIndicatorClickable" Name="Rotary 2" SnapTarget="True" Locked="False">
+          <PushedIndicatorOnImage />
+          <UnpushedIndicatorOnImage />
+          <ButtonClickType>Toggle</ButtonClickType>
+          <PushedImage>{Helios}/Images/Knobs/knob7.png</PushedImage>
+          <UnpushedImage>{Helios}/Images/Knobs/knob6.png</UnpushedImage>
+          <Location>1026,974</Location>
+          <Size>100,100</Size>
+          <Hidden>False</Hidden>
+          <KnobImage>{Helios}/Images/Knobs/knob6.png</KnobImage>
+          <RotationStep>5</RotationStep>
+          <StepValue>0.1</StepValue>
+          <InitialRotation>0</InitialRotation>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.RotaryEncoderIndicatorClickable" Name="Rotary 1" SnapTarget="True" Locked="False">
+          <PushedIndicatorOnImage />
+          <UnpushedIndicatorOnImage />
+          <ButtonClickType>Toggle</ButtonClickType>
+          <PushedImage>{Helios}/Images/Knobs/knob7.png</PushedImage>
+          <UnpushedImage>{Helios}/Images/Knobs/knob6.png</UnpushedImage>
+          <Location>784,974</Location>
+          <Size>100,100</Size>
+          <Hidden>False</Hidden>
+          <KnobImage>{Helios}/Images/Knobs/knob6.png</KnobImage>
+          <RotationStep>5</RotationStep>
+          <StepValue>0.1</StepValue>
+          <InitialRotation>0</InitialRotation>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.PushButton" Name="M" SnapTarget="True" Locked="False">
+          <Location>930,1000</Location>
+          <Size>50,50</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>{Helios}/Images/Buttons/tactile-light-round.png</Image>
+          <PushedImage>{Helios}/Images/Buttons/tactile-light-round-in.png</PushedImage>
           <Children />
         </Control>
       </Children>
@@ -806,46 +845,6 @@
       <StaticValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.MFD RIGHT.Sensor Gain;Helios.Base.ThreeWayToggleSwitch;Sensor Gain" Name="Sensor Gain.position.changed" />
-      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.set.MFD Right GAIN Rocker Switch" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.MFD RIGHT.Sensor Gain;Helios.Base.ThreeWayToggleSwitch;Sensor Gain" Name="Sensor Gain.released" />
-      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right GAIN Rocker Switch" />
-      <StaticValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.MFD RIGHT.Symbology;Helios.Base.ThreeWayToggleSwitch;Symbology" Name="Symbology.position.changed" />
-      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.set.MFD Right SYM Rocker Switch" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.MFD RIGHT.Symbology;Helios.Base.ThreeWayToggleSwitch;Symbology" Name="Symbology.released" />
-      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right SYM Rocker Switch" />
-      <StaticValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.MFD RIGHT.Brightness;Helios.Base.ThreeWayToggleSwitch;Brightness" Name="Brightness.position.changed" />
-      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.set.MFD Right BRT Rocker Switch" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.MFD RIGHT.Brightness;Helios.Base.ThreeWayToggleSwitch;Brightness" Name="Brightness.released" />
-      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right BRT Rocker Switch" />
-      <StaticValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.MFD RIGHT.Contrast;Helios.Base.ThreeWayToggleSwitch;Contrast" Name="Contrast.position.changed" />
-      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.set.MFD Right CON Rocker Switch" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.MFD RIGHT.Contrast;Helios.Base.ThreeWayToggleSwitch;Contrast" Name="Contrast.released" />
-      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right CON Rocker Switch" />
-      <StaticValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB1;Helios.Base.PushButton;OSB1" Name="OSB1.pushed" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.push.MFD Right Button 1" />
       <StaticValue />
@@ -1043,6 +1042,46 @@
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB16;Helios.Base.PushButton;OSB16" Name="OSB16.released" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right Button 16" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.Sensor Gain;Helios.Base.ThreeWayToggleSwitch;Sensor Gain" Name="Sensor Gain.position.changed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.set.MFD Right GAIN Rocker Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.Sensor Gain;Helios.Base.ThreeWayToggleSwitch;Sensor Gain" Name="Sensor Gain.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right GAIN Rocker Switch" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.Symbology;Helios.Base.ThreeWayToggleSwitch;Symbology" Name="Symbology.position.changed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.set.MFD Right SYM Rocker Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.Symbology;Helios.Base.ThreeWayToggleSwitch;Symbology" Name="Symbology.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right SYM Rocker Switch" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.Brightness;Helios.Base.ThreeWayToggleSwitch;Brightness" Name="Brightness.position.changed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.set.MFD Right BRT Rocker Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.Brightness;Helios.Base.ThreeWayToggleSwitch;Brightness" Name="Brightness.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right BRT Rocker Switch" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.Contrast;Helios.Base.ThreeWayToggleSwitch;Contrast" Name="Contrast.position.changed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.set.MFD Right CON Rocker Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.Contrast;Helios.Base.ThreeWayToggleSwitch;Contrast" Name="Contrast.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right CON Rocker Switch" />
       <StaticValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -1273,6 +1312,56 @@
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.DCS Switch;Helios.Base.HatSwitch;DCS Switch" Name="left.exited" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.release.ICP Data Control Switch - RET [Button]" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.Rotary 2;Helios.Base.RotaryEncoderIndicatorClickable;Rotary 2" Name="encoder.incremented" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="EHSI.increment.EHSI CRS Set Knob" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.Rotary 2;Helios.Base.RotaryEncoderIndicatorClickable;Rotary 2" Name="encoder.decremented" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="EHSI.decrement.EHSI CRS Set Knob" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.Rotary 2;Helios.Base.RotaryEncoderIndicatorClickable;Rotary 2" Name="button pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="EHSI.push.EHSI CRS Set Button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.Rotary 2;Helios.Base.RotaryEncoderIndicatorClickable;Rotary 2" Name="button released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="EHSI.release.EHSI CRS Set Button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.Rotary 1;Helios.Base.RotaryEncoderIndicatorClickable;Rotary 1" Name="encoder.incremented" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="EHSI.increment.EHSI HDG Set Knob" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.Rotary 1;Helios.Base.RotaryEncoderIndicatorClickable;Rotary 1" Name="encoder.decremented" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="EHSI.decrement.EHSI HDG Set Knob" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.Rotary 1;Helios.Base.RotaryEncoderIndicatorClickable;Rotary 1" Name="button pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="EHSI.push.EHSI HDG Set Button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.Rotary 1;Helios.Base.RotaryEncoderIndicatorClickable;Rotary 1" Name="button released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="EHSI.release.EHSI HDG Set Button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.M;Helios.Base.PushButton;M" Name="pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="EHSI.push.EHSI Mode (M) Button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.M;Helios.Base.PushButton;M" Name="released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="EHSI.release.EHSI Mode (M) Button" />
       <StaticValue />
     </Binding>
   </Bindings>
