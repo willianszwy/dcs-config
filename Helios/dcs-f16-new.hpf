@@ -766,6 +766,86 @@
       <StaticValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.Sensor Gain;Helios.Base.ThreeWayToggleSwitch;Sensor Gain" Name="Sensor Gain.position.changed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.set.MFD Left GAIN Rocker Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.Sensor Gain;Helios.Base.ThreeWayToggleSwitch;Sensor Gain" Name="Sensor Gain.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.release.MFD Left GAIN Rocker Switch" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.Symbology;Helios.Base.ThreeWayToggleSwitch;Symbology" Name="Symbology.position.changed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.set.MFD Left SYM Rocker Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.Symbology;Helios.Base.ThreeWayToggleSwitch;Symbology" Name="Symbology.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.release.MFD Left SYM Rocker Switch" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.Brightness;Helios.Base.ThreeWayToggleSwitch;Brightness" Name="Brightness.position.changed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.set.MFD Left BRT Rocker Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.Brightness;Helios.Base.ThreeWayToggleSwitch;Brightness" Name="Brightness.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.release.MFD Left BRT Rocker Switch" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.Contrast;Helios.Base.ThreeWayToggleSwitch;Contrast" Name="Contrast.position.changed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.set.MFD Left CON Rocker Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD LEFT.Contrast;Helios.Base.ThreeWayToggleSwitch;Contrast" Name="Contrast.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Left.release.MFD Left CON Rocker Switch" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.Sensor Gain;Helios.Base.ThreeWayToggleSwitch;Sensor Gain" Name="Sensor Gain.position.changed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.set.MFD Right GAIN Rocker Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.Sensor Gain;Helios.Base.ThreeWayToggleSwitch;Sensor Gain" Name="Sensor Gain.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right GAIN Rocker Switch" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.Symbology;Helios.Base.ThreeWayToggleSwitch;Symbology" Name="Symbology.position.changed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.set.MFD Right SYM Rocker Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.Symbology;Helios.Base.ThreeWayToggleSwitch;Symbology" Name="Symbology.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right SYM Rocker Switch" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.Brightness;Helios.Base.ThreeWayToggleSwitch;Brightness" Name="Brightness.position.changed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.set.MFD Right BRT Rocker Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.Brightness;Helios.Base.ThreeWayToggleSwitch;Brightness" Name="Brightness.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right BRT Rocker Switch" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.Contrast;Helios.Base.ThreeWayToggleSwitch;Contrast" Name="Contrast.position.changed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.set.MFD Right CON Rocker Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.MFD RIGHT.Contrast;Helios.Base.ThreeWayToggleSwitch;Contrast" Name="Contrast.released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.release.MFD Right CON Rocker Switch" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.MFD RIGHT.OSB1;Helios.Base.PushButton;OSB1" Name="OSB1.pushed" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="MFD Right.push.MFD Right Button 1" />
       <StaticValue />
