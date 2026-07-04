@@ -343,7 +343,7 @@
           </Font>
           <Text>F16C EHSI</Text>
           <ScalingMode>None</ScalingMode>
-          <Location>759,582</Location>
+          <Location>763,533</Location>
           <Size>391,391</Size>
           <Hidden>False</Hidden>
           <EffectsExclusion>True</EffectsExclusion>
@@ -368,11 +368,11 @@
           <ButtonClickType>Toggle</ButtonClickType>
           <PushedImage>{Helios}/Images/Knobs/knob7.png</PushedImage>
           <UnpushedImage>{Helios}/Images/Knobs/knob6.png</UnpushedImage>
-          <Location>1026,974</Location>
+          <Location>1026,938</Location>
           <Size>100,100</Size>
           <Hidden>False</Hidden>
           <KnobImage>{Helios}/Images/Knobs/knob6.png</KnobImage>
-          <RotationStep>5</RotationStep>
+          <RotationStep>2</RotationStep>
           <StepValue>0.1</StepValue>
           <InitialRotation>0</InitialRotation>
           <Children />
@@ -383,22 +383,312 @@
           <ButtonClickType>Toggle</ButtonClickType>
           <PushedImage>{Helios}/Images/Knobs/knob7.png</PushedImage>
           <UnpushedImage>{Helios}/Images/Knobs/knob6.png</UnpushedImage>
-          <Location>784,974</Location>
+          <Location>773,938</Location>
           <Size>100,100</Size>
           <Hidden>False</Hidden>
           <KnobImage>{Helios}/Images/Knobs/knob6.png</KnobImage>
-          <RotationStep>5</RotationStep>
+          <RotationStep>2</RotationStep>
           <StepValue>0.1</StepValue>
           <InitialRotation>0</InitialRotation>
           <Children />
         </Control>
         <Control TypeIdentifier="Helios.Base.PushButton" Name="M" SnapTarget="True" Locked="False">
-          <Location>930,1000</Location>
+          <Location>930,961</Location>
           <Size>50,50</Size>
           <Hidden>False</Hidden>
           <Type>Momentary</Type>
           <Image>{Helios}/Images/Buttons/tactile-light-round.png</Image>
           <PushedImage>{Helios}/Images/Buttons/tactile-light-round-in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.PushButton" Name="WX" SnapTarget="True" Locked="False">
+          <Location>1123,100</Location>
+          <Size>70,70</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>{F-16C}/Images/icp-wx.png</Image>
+          <PushedImage>{F-16C}/Images/icp-wx-press.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.ThreeWayToggleSwitch" Name="DRIFT SW" SnapTarget="True" Locked="False">
+          <Location>1135,185</Location>
+          <Size>45,95</Size>
+          <Hidden>False</Hidden>
+          <SwitchType>OnOnMom</SwitchType>
+          <Orientation>Vertical</Orientation>
+          <PositionOneImage>{Helios}/Images/Toggles/round-up.png</PositionOneImage>
+          <PositionTwoImage>{Helios}/Images/Toggles/round-norm.png</PositionTwoImage>
+          <PositionThreeImage>{Helios}/Images/Toggles/round-down.png</PositionThreeImage>
+          <DefaultPosition>Two</DefaultPosition>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="MASTER CAUTION" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>{Helios}/Images/Indicators/caution-indicator-on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>{Helios}/Images/Indicators/caution-indicator-on.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>14</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>MASTER CAUTION</Text>
+          <OnTextColor>#FFF5D014</OnTextColor>
+          <OffTextColor>#FF2A2A28</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>10,10</Location>
+          <Size>150,70</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>{Helios}/Images/Indicators/caution-indicator-off.png</Image>
+          <PushedImage>{Helios}/Images/Indicators/caution-indicator-off.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="F-ACK" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>{Helios}/Images/Buttons/tactile-dark-square.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>{Helios}/Images/Buttons/tactile-dark-square.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>13</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>F-ACK</Text>
+          <OnTextColor>#FFE8E4D8</OnTextColor>
+          <OffTextColor>#FFE8E4D8</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>170,10</Location>
+          <Size>70,70</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>{Helios}/Images/Buttons/tactile-dark-square.png</Image>
+          <PushedImage>{Helios}/Images/Buttons/tactile-dark-square.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="IDENT" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>{Helios}/Images/Buttons/tactile-dark-square.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>{Helios}/Images/Buttons/tactile-dark-square.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>13</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>IDENT</Text>
+          <OnTextColor>#FFE8E4D8</OnTextColor>
+          <OffTextColor>#FFE8E4D8</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>250,10</Location>
+          <Size>70,70</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>{Helios}/Images/Buttons/tactile-dark-square.png</Image>
+          <PushedImage>{Helios}/Images/Buttons/tactile-dark-square.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Indicator" Name="LAMP RDY" SnapTarget="True" Locked="False">
+          <OnImage>{Helios}/Images/Indicators/caution-indicator-off.png</OnImage>
+          <OffImage>{Helios}/Images/Indicators/caution-indicator-off.png</OffImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>12</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>RDY</Text>
+          <OnTextColor>#FF4FC3F7</OnTextColor>
+          <OffTextColor>#FF232322</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>10,95</Location>
+          <Size>105,45</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Indicator" Name="LAMP AR NWS" SnapTarget="True" Locked="False">
+          <OnImage>{Helios}/Images/Indicators/caution-indicator-off.png</OnImage>
+          <OffImage>{Helios}/Images/Indicators/caution-indicator-off.png</OffImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>12</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>AR NWS</Text>
+          <OnTextColor>#FF43D943</OnTextColor>
+          <OffTextColor>#FF232322</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>120,95</Location>
+          <Size>105,45</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Indicator" Name="LAMP DISC" SnapTarget="True" Locked="False">
+          <OnImage>{Helios}/Images/Indicators/caution-indicator-off.png</OnImage>
+          <OffImage>{Helios}/Images/Indicators/caution-indicator-off.png</OffImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>12</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>DISC</Text>
+          <OnTextColor>#FFFF4040</OnTextColor>
+          <OffTextColor>#FF232322</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>230,95</Location>
+          <Size>105,45</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Indicator" Name="LAMP GEAR NOSE" SnapTarget="True" Locked="False">
+          <OnImage>{Helios}/Images/Indicators/caution-indicator-off.png</OnImage>
+          <OffImage>{Helios}/Images/Indicators/caution-indicator-off.png</OffImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>12</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>NOSE</Text>
+          <OnTextColor>#FF43D943</OnTextColor>
+          <OffTextColor>#FF232322</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>10,150</Location>
+          <Size>105,45</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Indicator" Name="LAMP GEAR LEFT" SnapTarget="True" Locked="False">
+          <OnImage>{Helios}/Images/Indicators/caution-indicator-off.png</OnImage>
+          <OffImage>{Helios}/Images/Indicators/caution-indicator-off.png</OffImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>12</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>LEFT</Text>
+          <OnTextColor>#FF43D943</OnTextColor>
+          <OffTextColor>#FF232322</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>120,150</Location>
+          <Size>105,45</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Indicator" Name="LAMP GEAR RIGHT" SnapTarget="True" Locked="False">
+          <OnImage>{Helios}/Images/Indicators/caution-indicator-off.png</OnImage>
+          <OffImage>{Helios}/Images/Indicators/caution-indicator-off.png</OffImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>12</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>RIGHT</Text>
+          <OnTextColor>#FF43D943</OnTextColor>
+          <OffTextColor>#FF232322</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>230,150</Location>
+          <Size>105,45</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Indicator" Name="LAMP GEAR WARN" SnapTarget="True" Locked="False">
+          <OnImage>{Helios}/Images/Indicators/caution-indicator-off.png</OnImage>
+          <OffImage>{Helios}/Images/Indicators/caution-indicator-off.png</OffImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>12</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>GEAR WARN</Text>
+          <OnTextColor>#FFFF4040</OnTextColor>
+          <OffTextColor>#FF232322</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>10,205</Location>
+          <Size>105,45</Size>
+          <Hidden>False</Hidden>
           <Children />
         </Control>
       </Children>
@@ -1363,6 +1653,106 @@
       <Trigger Source="Visual;Monitor 2.M;Helios.Base.PushButton;M" Name="released" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="EHSI.release.EHSI Mode (M) Button" />
       <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.Tactile Square - Light;Helios.Base.PushButton;Tactile Square - Light" Name="released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.set.ICP DED Increment/Decrement Switch" />
+      <StaticValue>2</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.Tactile Square - Light 1;Helios.Base.PushButton;Tactile Square - Light 1" Name="released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.set.ICP DED Increment/Decrement Switch" />
+      <StaticValue>2</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.WX;Helios.Base.PushButton;WX" Name="pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.push.ICP FLIR Polarity Button, Wx" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.WX;Helios.Base.PushButton;WX" Name="released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.release.ICP FLIR Polarity Button, Wx" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.DRIFT SW;Helios.Base.ThreeWayToggleSwitch;DRIFT SW" Name="position.changed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.set.ICP_DRIFT_SW" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.ICP_DRIFT_SW.changed" />
+      <Action Target="Visual;Monitor 2.DRIFT SW;Helios.Base.ThreeWayToggleSwitch;DRIFT SW" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.MASTER CAUTION;Helios.Base.IndicatorPushButton;MASTER CAUTION" Name="pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="Interior Lights.push.Master Caution Button - Push to reset" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.MASTER CAUTION;Helios.Base.IndicatorPushButton;MASTER CAUTION" Name="released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="Interior Lights.release.Master Caution Button - Push to reset" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="Warning, Caution and IndicatorLights.MASTER CAUTION Light (yellow).changed" />
+      <Action Target="Visual;Monitor 2.MASTER CAUTION;Helios.Base.IndicatorPushButton;MASTER CAUTION" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.F-ACK;Helios.Base.IndicatorPushButton;F-ACK" Name="pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.push.F-ACK Button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.F-ACK;Helios.Base.IndicatorPushButton;F-ACK" Name="released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.release.F-ACK Button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.IDENT;Helios.Base.IndicatorPushButton;IDENT" Name="pushed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.push.IFF IDENT Button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.IDENT;Helios.Base.IndicatorPushButton;IDENT" Name="released" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="UFC.release.IFF IDENT Button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="Warning, Caution and IndicatorLights.RDY Light (blue).changed" />
+      <Action Target="Visual;Monitor 2.LAMP RDY;Helios.Base.Indicator;LAMP RDY" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="Warning, Caution and IndicatorLights.AR NWS Light (green).changed" />
+      <Action Target="Visual;Monitor 2.LAMP AR NWS;Helios.Base.Indicator;LAMP AR NWS" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="Warning, Caution and IndicatorLights.DISC Light (red).changed" />
+      <Action Target="Visual;Monitor 2.LAMP DISC;Helios.Base.Indicator;LAMP DISC" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="Warning, Caution and IndicatorLights.Nose Gear Light (green).changed" />
+      <Action Target="Visual;Monitor 2.LAMP GEAR NOSE;Helios.Base.Indicator;LAMP GEAR NOSE" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="Warning, Caution and IndicatorLights.Left Gear Light (green).changed" />
+      <Action Target="Visual;Monitor 2.LAMP GEAR LEFT;Helios.Base.Indicator;LAMP GEAR LEFT" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="Warning, Caution and IndicatorLights.Right Gear Light (green).changed" />
+      <Action Target="Visual;Monitor 2.LAMP GEAR RIGHT;Helios.Base.Indicator;LAMP GEAR RIGHT" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F-16C_50" Name="Warning, Caution and IndicatorLights.Gear Warning Light (red).changed" />
+      <Action Target="Visual;Monitor 2.LAMP GEAR WARN;Helios.Base.Indicator;LAMP GEAR WARN" Name="set.indicator" />
+      <TriggerValue />
     </Binding>
   </Bindings>
 </HeliosProfile>

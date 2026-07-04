@@ -55,11 +55,36 @@ e deixar só o Tonemap ativo — os valores foram escolhidos para serem sutis o 
 
 ---
 
+## 3. Profile Helios Ka-50 III (ka50.hpf)
+
+**Arquivos:**
+- `Helios/ka50.hpf` -> `Documents\Helios\Profiles\`
+- `Helios/Images/KA50/` (pasta inteira) -> `Documents\Helios\Images\KA50\`
+
+O profile usa imagens customizadas no estilo real do cockpit (botões pretos com
+legenda em cirílico e faixa-lâmpada verde/âmbar, geradas a partir das texturas do
+módulo). **Sem a pasta de imagens os botões aparecem vazios.**
+
+### Painéis incluídos (monitor 2, junto aos viewports SHKVAL/ABRIS):
+- PVI-800 completo: displays, teclado 0-9, ВВОД/СБРОС, modos (ППМ/ОР/АЭР/ОТ/φλ...),
+  alinhamento INU e seletor Master Mode (7 posições)
+- Autopilot: К/Т/Н/В/ДУ com lâmpadas de canal engatado + toggles БАР-РВ e ЗК-ЛЗП
+- Datalink PRTz: destinatários 1-4/ВСЕМ, tipos de alvo, ПРД/ПАМ, СТИР, ОТВОРОТ,
+  ponto de ingresso + knobs Self ID e modo
+- Todas as lâmpadas sincronizam com o estado do jogo (trigger `<nome> indicator`)
+
+---
+
 ## Estrutura de arquivos deste backup
 
 ```
 DCS_Setup_Backup/
 ├── INSTRUCOES.md               <- este arquivo
+├── Helios/
+│   ├── ka50.hpf                -> Documents\Helios\Profiles\
+│   ├── dcs-f16-new.hpf         -> Documents\Helios\Profiles\
+│   ├── Images/KA50/            -> Documents\Helios\Images\KA50\
+│   └── ...                     (demais profiles)
 ├── MonitorSetup/
 │   └── f16_2monitors.lua       -> Saved Games\DCS\Config\MonitorSetup\
 └── ReShade/

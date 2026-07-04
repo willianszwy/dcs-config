@@ -1,0 +1,2462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HeliosProfile>
+  <Version>3</Version>
+  <Monitors>
+    <Monitor>
+      <Location>0,0</Location>
+      <Size>3440,1440</Size>
+      <Hidden>False</Hidden>
+      <Orientation>DMDO_DEFAULT</Orientation>
+      <AlwaysOnTop>True</AlwaysOnTop>
+      <Background />
+      <Children />
+    </Monitor>
+    <Monitor>
+      <Location>3440,0</Location>
+      <Size>1920,1080</Size>
+      <Hidden>False</Hidden>
+      <Orientation>DMDO_DEFAULT</Orientation>
+      <AlwaysOnTop>True</AlwaysOnTop>
+      <Background />
+      <Children>
+        <Control TypeIdentifier="Helios.Base.ViewportExtent" Name="Ka50 III SHKVAL" SnapTarget="True" Locked="False">
+          <FillBackground>True</FillBackground>
+          <BackgroundColor>#804C4CE0</BackgroundColor>
+          <FontColor>#FFFFFFFF</FontColor>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>12</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>Ka50 III SHKVAL</Text>
+          <ScalingMode>None</ScalingMode>
+          <Location>12,23</Location>
+          <Size>1143,721</Size>
+          <Hidden>False</Hidden>
+          <EffectsExclusion>True</EffectsExclusion>
+          <ViewportName>KA_50_3_SHKVAL</ViewportName>
+          <RequiresPatches>True</RequiresPatches>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.ViewportExtent" Name="Ka50 III ABRIS" SnapTarget="True" Locked="False">
+          <FillBackground>True</FillBackground>
+          <BackgroundColor>#804C4CE0</BackgroundColor>
+          <FontColor>#FFFFFFFF</FontColor>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>12</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>Ka50 III ABRIS</Text>
+          <ScalingMode>None</ScalingMode>
+          <Location>1173,23</Location>
+          <Size>736,949</Size>
+          <Hidden>False</Hidden>
+          <EffectsExclusion>True</EffectsExclusion>
+          <ViewportName>KA_50_3_ABRIS</ViewportName>
+          <RequiresPatches>True</RequiresPatches>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.PushButton" Name="Tactile Square - Light" SnapTarget="True" Locked="False">
+          <Location>1292,993</Location>
+          <Size>50,50</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_abris_off.png</Image>
+          <PushedImage>KA50/btn_abris_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.PushButton" Name="Tactile Square - Light 1" SnapTarget="True" Locked="False">
+          <Location>1393,993</Location>
+          <Size>50,50</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_abris_off.png</Image>
+          <PushedImage>KA50/btn_abris_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.PushButton" Name="Tactile Square - Light 2" SnapTarget="True" Locked="False">
+          <Location>1498,993</Location>
+          <Size>50,50</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_abris_off.png</Image>
+          <PushedImage>KA50/btn_abris_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.PushButton" Name="Tactile Square - Light 3" SnapTarget="True" Locked="False">
+          <Location>1613,993</Location>
+          <Size>50,50</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_abris_off.png</Image>
+          <PushedImage>KA50/btn_abris_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.PushButton" Name="Tactile Square - Light 4" SnapTarget="True" Locked="False">
+          <Location>1723,993</Location>
+          <Size>50,50</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_abris_off.png</Image>
+          <PushedImage>KA50/btn_abris_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.RotaryEncoderClickable" Name="Clickable Rotary Encoder" SnapTarget="True" Locked="False">
+          <ButtonClickType>Toggle</ButtonClickType>
+          <PushedImage>KA50/knob_in.png</PushedImage>
+          <UnpushedImage>KA50/knob.png</UnpushedImage>
+          <Location>1155,972</Location>
+          <Size>100,100</Size>
+          <Hidden>False</Hidden>
+          <KnobImage>KA50/knob.png</KnobImage>
+          <RotationStep>2</RotationStep>
+          <StepValue>0.1</StepValue>
+          <InitialRotation>0</InitialRotation>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.RotaryEncoderClickable" Name="Clickable Rotary Encoder 1" SnapTarget="True" Locked="False">
+          <ButtonClickType>Toggle</ButtonClickType>
+          <PushedImage>KA50/knob_in.png</PushedImage>
+          <UnpushedImage>KA50/knob.png</UnpushedImage>
+          <Location>1809,972</Location>
+          <Size>100,100</Size>
+          <Hidden>False</Hidden>
+          <KnobImage>KA50/knob.png</KnobImage>
+          <RotationStep>2</RotationStep>
+          <StepValue>0.1</StepValue>
+          <InitialRotation>0</InitialRotation>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.TextDisplay" Name="PVI Upper Small" SnapTarget="True" Locked="False">
+          <Font>
+            <FontFamily>DSEG7 Classic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>36</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <OnTextColor>#FFFF5A00</OnTextColor>
+          <BackgroundColor>#FF1A0808</BackgroundColor>
+          <TextTest>8</TextTest>
+          <ParserDictionary />
+          <UseBackground>True</UseBackground>
+          <UseParserDictionary>False</UseParserDictionary>
+          <ScalingMode>Height</ScalingMode>
+          <Location>25,770</Location>
+          <Size>52,55</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.TextDisplay" Name="PVI Upper Big" SnapTarget="True" Locked="False">
+          <Font>
+            <FontFamily>DSEG7 Classic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>36</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <OnTextColor>#FFFF5A00</OnTextColor>
+          <BackgroundColor>#FF1A0808</BackgroundColor>
+          <TextTest>888888</TextTest>
+          <ParserDictionary />
+          <UseBackground>True</UseBackground>
+          <UseParserDictionary>False</UseParserDictionary>
+          <ScalingMode>Height</ScalingMode>
+          <Location>85,770</Location>
+          <Size>255,55</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.TextDisplay" Name="PVI Lower Small" SnapTarget="True" Locked="False">
+          <Font>
+            <FontFamily>DSEG7 Classic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>36</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <OnTextColor>#FFFF5A00</OnTextColor>
+          <BackgroundColor>#FF1A0808</BackgroundColor>
+          <TextTest>8</TextTest>
+          <ParserDictionary />
+          <UseBackground>True</UseBackground>
+          <UseParserDictionary>False</UseParserDictionary>
+          <ScalingMode>Height</ScalingMode>
+          <Location>25,835</Location>
+          <Size>52,55</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.TextDisplay" Name="PVI Lower Big" SnapTarget="True" Locked="False">
+          <Font>
+            <FontFamily>DSEG7 Classic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>36</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <OnTextColor>#FFFF5A00</OnTextColor>
+          <BackgroundColor>#FF1A0808</BackgroundColor>
+          <TextTest>888888</TextTest>
+          <ParserDictionary />
+          <UseBackground>True</UseBackground>
+          <UseParserDictionary>False</UseParserDictionary>
+          <ScalingMode>Height</ScalingMode>
+          <Location>85,835</Location>
+          <Size>255,55</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="PVI 7" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_7_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_7_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>20</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FF141414</OnTextColor>
+          <OffTextColor>#FF141414</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>360,765</Location>
+          <Size>55,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_7_off.png</Image>
+          <PushedImage>KA50/btn_7_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="PVI 8" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_8_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_8_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>20</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FF141414</OnTextColor>
+          <OffTextColor>#FF141414</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>423,765</Location>
+          <Size>55,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_8_off.png</Image>
+          <PushedImage>KA50/btn_8_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="PVI 9" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_9_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_9_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>20</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FF141414</OnTextColor>
+          <OffTextColor>#FF141414</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>486,765</Location>
+          <Size>55,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_9_off.png</Image>
+          <PushedImage>KA50/btn_9_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="PVI 4" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_4_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_4_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>20</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FF141414</OnTextColor>
+          <OffTextColor>#FF141414</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>360,828</Location>
+          <Size>55,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_4_off.png</Image>
+          <PushedImage>KA50/btn_4_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="PVI 5" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_5_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_5_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>20</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FF141414</OnTextColor>
+          <OffTextColor>#FF141414</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>423,828</Location>
+          <Size>55,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_5_off.png</Image>
+          <PushedImage>KA50/btn_5_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="PVI 6" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_6_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_6_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>20</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FF141414</OnTextColor>
+          <OffTextColor>#FF141414</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>486,828</Location>
+          <Size>55,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_6_off.png</Image>
+          <PushedImage>KA50/btn_6_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="PVI 1" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_1_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_1_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>20</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FF141414</OnTextColor>
+          <OffTextColor>#FF141414</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>360,891</Location>
+          <Size>55,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_1_off.png</Image>
+          <PushedImage>KA50/btn_1_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="PVI 2" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_2_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_2_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>20</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FF141414</OnTextColor>
+          <OffTextColor>#FF141414</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>423,891</Location>
+          <Size>55,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_2_off.png</Image>
+          <PushedImage>KA50/btn_2_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="PVI 3" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_3_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_3_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>20</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FF141414</OnTextColor>
+          <OffTextColor>#FF141414</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>486,891</Location>
+          <Size>55,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_3_off.png</Image>
+          <PushedImage>KA50/btn_3_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="PVI 0" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_0_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_0_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>20</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FF141414</OnTextColor>
+          <OffTextColor>#FF141414</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>360,954</Location>
+          <Size>55,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_0_off.png</Image>
+          <PushedImage>KA50/btn_0_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="PVI CXL" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_sbros_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_sbros_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>16</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFFFD24D</OnTextColor>
+          <OffTextColor>#FFF0F0F0</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>423,954</Location>
+          <Size>85,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_sbros_off.png</Image>
+          <PushedImage>KA50/btn_sbros_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="PVI ENT" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_vvod_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_vvod_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>16</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFB3A229</OnTextColor>
+          <OffTextColor>#FF141414</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>486,954</Location>
+          <Size>85,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_vvod_off.png</Image>
+          <PushedImage>KA50/btn_vvod_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="PVI WPT" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_ppm_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_ppm_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>13</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFB3A229</OnTextColor>
+          <OffTextColor>#FF9A9A9A</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>575,765</Location>
+          <Size>85,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_ppm_off.png</Image>
+          <PushedImage>KA50/btn_ppm_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="PVI FIX" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_or_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_or_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>13</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFB3A229</OnTextColor>
+          <OffTextColor>#FF9A9A9A</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>575,828</Location>
+          <Size>85,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_or_off.png</Image>
+          <PushedImage>KA50/btn_or_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="PVI AIR" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_aer_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_aer_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>13</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFB3A229</OnTextColor>
+          <OffTextColor>#FF9A9A9A</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>575,891</Location>
+          <Size>85,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_aer_off.png</Image>
+          <PushedImage>KA50/btn_aer_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="PVI TGT" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_ot_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_ot_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>13</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFB3A229</OnTextColor>
+          <OffTextColor>#FF9A9A9A</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>575,954</Location>
+          <Size>85,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_ot_off.png</Image>
+          <PushedImage>KA50/btn_ot_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="PVI SELF" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_fl_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_fl_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>13</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFB3A229</OnTextColor>
+          <OffTextColor>#FF9A9A9A</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>670,765</Location>
+          <Size>85,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_fl_off.png</Image>
+          <PushedImage>KA50/btn_fl_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="PVI DEV" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_psiwt_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_psiwt_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>13</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFB3A229</OnTextColor>
+          <OffTextColor>#FF9A9A9A</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>670,828</Location>
+          <Size>85,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_psiwt_off.png</Image>
+          <PushedImage>KA50/btn_psiwt_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="PVI WIND" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_thu_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_thu_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>13</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFB3A229</OnTextColor>
+          <OffTextColor>#FF9A9A9A</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>670,891</Location>
+          <Size>85,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_thu_off.png</Image>
+          <PushedImage>KA50/btn_thu_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="PVI HDG" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_psizt_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_psizt_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>13</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFB3A229</OnTextColor>
+          <OffTextColor>#FF9A9A9A</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>670,954</Location>
+          <Size>85,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_psizt_off.png</Image>
+          <PushedImage>KA50/btn_psizt_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="PVI BRG" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_adc_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_adc_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>13</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFB3A229</OnTextColor>
+          <OffTextColor>#FF9A9A9A</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>765,765</Location>
+          <Size>85,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_adc_off.png</Image>
+          <PushedImage>KA50/btn_adc_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="PVI INIT" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_ks_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_ks_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>13</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFB3A229</OnTextColor>
+          <OffTextColor>#FF9A9A9A</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>765,828</Location>
+          <Size>85,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_ks_off.png</Image>
+          <PushedImage>KA50/btn_ks_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="PVI ALN-N" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_nv_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_nv_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>13</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFB3A229</OnTextColor>
+          <OffTextColor>#FF9A9A9A</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>765,891</Location>
+          <Size>85,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_nv_off.png</Image>
+          <PushedImage>KA50/btn_nv_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="PVI ALN-P" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_tv_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_tv_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>13</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFB3A229</OnTextColor>
+          <OffTextColor>#FF9A9A9A</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>765,954</Location>
+          <Size>85,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_tv_off.png</Image>
+          <PushedImage>KA50/btn_tv_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="PVI INU-RST" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_pz_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_pz_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>13</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFB3A229</OnTextColor>
+          <OffTextColor>#FF9A9A9A</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>860,765</Location>
+          <Size>85,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_pz_off.png</Image>
+          <PushedImage>KA50/btn_pz_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.RotarySwitch" Name="PVI Master Mode" SnapTarget="True" Locked="False">
+          <Location>975,790</Location>
+          <Size>150,150</Size>
+          <Hidden>False</Hidden>
+          <KnobImage>KA50/knob.png</KnobImage>
+          <Positions>
+            <Position Name="Off" Rotation="240" />
+            <Position Name="Check" Rotation="280" />
+            <Position Name="Edit" Rotation="320" />
+            <Position Name="Oper" Rotation="0" />
+            <Position Name="Sim" Rotation="40" />
+            <Position Name="K-1" Rotation="80" />
+            <Position Name="K-2" Rotation="120" />
+          </Positions>
+          <DefaultPosition>1</DefaultPosition>
+          <ClickType>
+            <Type>Touch</Type>
+          </ClickType>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="AP BNK" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_ap_k_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_ap_k_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>13</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFB3A229</OnTextColor>
+          <OffTextColor>#FF9A9A9A</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>25,905</Location>
+          <Size>60,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_ap_k_off.png</Image>
+          <PushedImage>KA50/btn_ap_k_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="AP PTH" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_ap_t_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_ap_t_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>13</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFB3A229</OnTextColor>
+          <OffTextColor>#FF9A9A9A</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>88,905</Location>
+          <Size>60,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_ap_t_off.png</Image>
+          <PushedImage>KA50/btn_ap_t_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="AP HDG" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_ap_n_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_ap_n_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>13</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFB3A229</OnTextColor>
+          <OffTextColor>#FF9A9A9A</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>151,905</Location>
+          <Size>60,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_ap_n_off.png</Image>
+          <PushedImage>KA50/btn_ap_n_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="AP ALT" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_ap_v_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_ap_v_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>13</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFB3A229</OnTextColor>
+          <OffTextColor>#FF9A9A9A</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>214,905</Location>
+          <Size>60,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_ap_v_off.png</Image>
+          <PushedImage>KA50/btn_ap_v_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="AP FD" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_ap_du_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_ap_du_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>13</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFB3A229</OnTextColor>
+          <OffTextColor>#FF9A9A9A</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>277,905</Location>
+          <Size>60,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_ap_du_off.png</Image>
+          <PushedImage>KA50/btn_ap_du_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.ThreeWayToggleSwitch" Name="AP ALT SRC" SnapTarget="True" Locked="False">
+          <Location>52,968</Location>
+          <Size>45,95</Size>
+          <Hidden>False</Hidden>
+          <SwitchType>OnOnOn</SwitchType>
+          <Orientation>Vertical</Orientation>
+          <PositionOneImage>{Helios}/Images/Toggles/round-up.png</PositionOneImage>
+          <PositionTwoImage>{Helios}/Images/Toggles/round-norm.png</PositionTwoImage>
+          <PositionThreeImage>{Helios}/Images/Toggles/round-down.png</PositionThreeImage>
+          <DefaultPosition>Two</DefaultPosition>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.ThreeWayToggleSwitch" Name="AP HDG-TRK" SnapTarget="True" Locked="False">
+          <Location>142,968</Location>
+          <Size>45,95</Size>
+          <Hidden>False</Hidden>
+          <SwitchType>OnOnOn</SwitchType>
+          <Orientation>Vertical</Orientation>
+          <PositionOneImage>{Helios}/Images/Toggles/round-up.png</PositionOneImage>
+          <PositionTwoImage>{Helios}/Images/Toggles/round-norm.png</PositionTwoImage>
+          <PositionThreeImage>{Helios}/Images/Toggles/round-down.png</PositionThreeImage>
+          <DefaultPosition>Two</DefaultPosition>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.RotarySwitch" Name="DL SELF ID" SnapTarget="True" Locked="False">
+          <Location>965,945</Location>
+          <Size>90,90</Size>
+          <Hidden>False</Hidden>
+          <KnobImage>KA50/knob.png</KnobImage>
+          <Positions>
+            <Position Name="1" Rotation="315" />
+            <Position Name="2" Rotation="345" />
+            <Position Name="3" Rotation="15" />
+            <Position Name="4" Rotation="45" />
+          </Positions>
+          <DefaultPosition>1</DefaultPosition>
+          <ClickType>
+            <Type>Touch</Type>
+          </ClickType>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.RotarySwitch" Name="DL MODE" SnapTarget="True" Locked="False">
+          <Location>1060,945</Location>
+          <Size>90,90</Size>
+          <Hidden>False</Hidden>
+          <KnobImage>KA50/knob.png</KnobImage>
+          <Positions>
+            <Position Name="Off" Rotation="315" />
+            <Position Name="Rcv" Rotation="345" />
+            <Position Name="Wing" Rotation="15" />
+            <Position Name="Cmdr" Rotation="45" />
+          </Positions>
+          <DefaultPosition>1</DefaultPosition>
+          <ClickType>
+            <Type>Touch</Type>
+          </ClickType>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="DL W1" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_1_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_1_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>11</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFB3A229</OnTextColor>
+          <OffTextColor>#FF9A9A9A</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>360,1018</Location>
+          <Size>45,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_1_off.png</Image>
+          <PushedImage>KA50/btn_1_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="DL W2" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_2_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_2_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>11</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFB3A229</OnTextColor>
+          <OffTextColor>#FF9A9A9A</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>408,1018</Location>
+          <Size>45,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_2_off.png</Image>
+          <PushedImage>KA50/btn_2_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="DL W3" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_3_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_3_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>11</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFB3A229</OnTextColor>
+          <OffTextColor>#FF9A9A9A</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>456,1018</Location>
+          <Size>45,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_3_off.png</Image>
+          <PushedImage>KA50/btn_3_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="DL W4" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_4_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_4_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>11</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFB3A229</OnTextColor>
+          <OffTextColor>#FF9A9A9A</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>504,1018</Location>
+          <Size>45,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_4_off.png</Image>
+          <PushedImage>KA50/btn_4_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="DL ALL" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_vsem_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_vsem_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>11</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFB3A229</OnTextColor>
+          <OffTextColor>#FF9A9A9A</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>552,1018</Location>
+          <Size>45,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_vsem_off.png</Image>
+          <PushedImage>KA50/btn_vsem_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="DL T1" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_tgt1_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_tgt1_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>11</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFB3A229</OnTextColor>
+          <OffTextColor>#FF9A9A9A</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>600,1018</Location>
+          <Size>45,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_tgt1_off.png</Image>
+          <PushedImage>KA50/btn_tgt1_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="DL T2" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_tgt2_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_tgt2_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>11</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFB3A229</OnTextColor>
+          <OffTextColor>#FF9A9A9A</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>648,1018</Location>
+          <Size>45,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_tgt2_off.png</Image>
+          <PushedImage>KA50/btn_tgt2_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="DL T3" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_tgt3_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_tgt3_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>11</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFB3A229</OnTextColor>
+          <OffTextColor>#FF9A9A9A</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>696,1018</Location>
+          <Size>45,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_tgt3_off.png</Image>
+          <PushedImage>KA50/btn_tgt3_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="DL SND" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_prd_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_prd_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>11</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFB3A229</OnTextColor>
+          <OffTextColor>#FF9A9A9A</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>744,1018</Location>
+          <Size>45,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_prd_off.png</Image>
+          <PushedImage>KA50/btn_prd_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="DL ERS" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_stir_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_stir_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>11</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFB3A229</OnTextColor>
+          <OffTextColor>#FF9A9A9A</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>792,1018</Location>
+          <Size>45,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_stir_off.png</Image>
+          <PushedImage>KA50/btn_stir_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="DL ING" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_otvorot_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_otvorot_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>11</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFB3A229</OnTextColor>
+          <OffTextColor>#FF9A9A9A</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>840,1018</Location>
+          <Size>45,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_otvorot_off.png</Image>
+          <PushedImage>KA50/btn_otvorot_off_in.png</PushedImage>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.IndicatorPushButton" Name="DL IPT" SnapTarget="True" Locked="False">
+          <IndicatorOnImage>KA50/btn_house_on.png</IndicatorOnImage>
+          <PushedIndicatorOnImage>KA50/btn_house_on_in.png</PushedIndicatorOnImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>11</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text />
+          <OnTextColor>#FFB3A229</OnTextColor>
+          <OffTextColor>#FF9A9A9A</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>888,1018</Location>
+          <Size>45,55</Size>
+          <Hidden>False</Hidden>
+          <Type>Momentary</Type>
+          <Image>KA50/btn_house_off.png</Image>
+          <PushedImage>KA50/btn_house_off_in.png</PushedImage>
+          <Children />
+        </Control>
+      </Children>
+    </Monitor>
+  </Monitors>
+  <Interfaces>
+    <Interface TypeIdentifier="Helios.Base.ProfileInterface" Name="Profile" />
+    <Interface TypeIdentifier="Helios.Base.Keyboard" Name="Keyboard">
+      <KeyDelay>30</KeyDelay>
+    </Interface>
+    <Interface TypeIdentifier="Helios.KA50-3" Name="DCS Black Shark 3" />
+    <Interface TypeIdentifier="Patching.DCS.MonitorSetup" Name="DCS Monitor Setup" />
+    <Interface TypeIdentifier="Patching.DCS.AdditionalViewports" Name="DCS Additional Viewports" />
+  </Interfaces>
+  <Bindings>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="ABRIS.Button 1.pushed" />
+      <Action Target="Visual;Monitor 2.Tactile Square - Light;Helios.Base.PushButton;Tactile Square - Light" Name="push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="ABRIS.Button 1.released" />
+      <Action Target="Visual;Monitor 2.Tactile Square - Light;Helios.Base.PushButton;Tactile Square - Light" Name="release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="ABRIS.Button 2.pushed" />
+      <Action Target="Visual;Monitor 2.Tactile Square - Light 1;Helios.Base.PushButton;Tactile Square - Light 1" Name="push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="ABRIS.Button 2.released" />
+      <Action Target="Visual;Monitor 2.Tactile Square - Light 1;Helios.Base.PushButton;Tactile Square - Light 1" Name="release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="ABRIS.Button 3.pushed" />
+      <Action Target="Visual;Monitor 2.Tactile Square - Light 2;Helios.Base.PushButton;Tactile Square - Light 2" Name="push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="ABRIS.Button 3.released" />
+      <Action Target="Visual;Monitor 2.Tactile Square - Light 2;Helios.Base.PushButton;Tactile Square - Light 2" Name="release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="ABRIS.Button 4.pushed" />
+      <Action Target="Visual;Monitor 2.Tactile Square - Light 3;Helios.Base.PushButton;Tactile Square - Light 3" Name="push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="ABRIS.Button 4.released" />
+      <Action Target="Visual;Monitor 2.Tactile Square - Light 3;Helios.Base.PushButton;Tactile Square - Light 3" Name="release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="ABRIS.Button 5.pushed" />
+      <Action Target="Visual;Monitor 2.Tactile Square - Light 4;Helios.Base.PushButton;Tactile Square - Light 4" Name="push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="ABRIS.Button 5.released" />
+      <Action Target="Visual;Monitor 2.Tactile Square - Light 4;Helios.Base.PushButton;Tactile Square - Light 4" Name="release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="ABRIS.Cursor Select.pushed" />
+      <Action Target="Visual;Monitor 2.Clickable Rotary Encoder;Helios.Base.RotaryEncoderClickable;Clickable Rotary Encoder" Name="push button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="ABRIS.Cursor Select.released" />
+      <Action Target="Visual;Monitor 2.Clickable Rotary Encoder;Helios.Base.RotaryEncoderClickable;Clickable Rotary Encoder" Name="release button" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="ABRIS.Brightness.changed" />
+      <Action Target="Visual;Monitor 2.Clickable Rotary Encoder 1;Helios.Base.RotaryEncoderClickable;Clickable Rotary Encoder 1" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="ABRIS.Cursor.changed" />
+      <Action Target="Visual;Monitor 2.Clickable Rotary Encoder;Helios.Base.RotaryEncoderClickable;Clickable Rotary Encoder" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.Tactile Square - Light;Helios.Base.PushButton;Tactile Square - Light" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="ABRIS.push.Button 1" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.Tactile Square - Light;Helios.Base.PushButton;Tactile Square - Light" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="ABRIS.release.Button 1" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.Tactile Square - Light 1;Helios.Base.PushButton;Tactile Square - Light 1" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="ABRIS.push.Button 2" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.Tactile Square - Light 1;Helios.Base.PushButton;Tactile Square - Light 1" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="ABRIS.release.Button 2" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.Tactile Square - Light 2;Helios.Base.PushButton;Tactile Square - Light 2" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="ABRIS.push.Button 3" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.Tactile Square - Light 2;Helios.Base.PushButton;Tactile Square - Light 2" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="ABRIS.release.Button 3" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.Tactile Square - Light 3;Helios.Base.PushButton;Tactile Square - Light 3" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="ABRIS.push.Button 4" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.Tactile Square - Light 3;Helios.Base.PushButton;Tactile Square - Light 3" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="ABRIS.release.Button 4" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.Tactile Square - Light 4;Helios.Base.PushButton;Tactile Square - Light 4" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="ABRIS.push.Button 5" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.Tactile Square - Light 4;Helios.Base.PushButton;Tactile Square - Light 4" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="ABRIS.release.Button 5" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.Clickable Rotary Encoder;Helios.Base.RotaryEncoderClickable;Clickable Rotary Encoder" Name="encoder.incremented" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="ABRIS.increment.Cursor" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.Clickable Rotary Encoder;Helios.Base.RotaryEncoderClickable;Clickable Rotary Encoder" Name="encoder.decremented" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="ABRIS.decrement.Cursor" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.Clickable Rotary Encoder;Helios.Base.RotaryEncoderClickable;Clickable Rotary Encoder" Name="button pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="ABRIS.push.Cursor Select" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.Clickable Rotary Encoder;Helios.Base.RotaryEncoderClickable;Clickable Rotary Encoder" Name="button released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="ABRIS.release.Cursor Select" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.Clickable Rotary Encoder 1;Helios.Base.RotaryEncoderClickable;Clickable Rotary Encoder 1" Name="value.changed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="ABRIS.set.Brightness" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.Upper small display digit.changed" />
+      <Action Target="Visual;Monitor 2.PVI Upper Small;Helios.Base.TextDisplay;PVI Upper Small" Name="set.TextDisplay" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.Upper big display digits.changed" />
+      <Action Target="Visual;Monitor 2.PVI Upper Big;Helios.Base.TextDisplay;PVI Upper Big" Name="set.TextDisplay" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.Lower small display digit.changed" />
+      <Action Target="Visual;Monitor 2.PVI Lower Small;Helios.Base.TextDisplay;PVI Lower Small" Name="set.TextDisplay" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.Lower big display digits.changed" />
+      <Action Target="Visual;Monitor 2.PVI Lower Big;Helios.Base.TextDisplay;PVI Lower Big" Name="set.TextDisplay" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI 7;Helios.Base.IndicatorPushButton;PVI 7" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.push.7" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI 7;Helios.Base.IndicatorPushButton;PVI 7" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.release.7" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.7.pushed" />
+      <Action Target="Visual;Monitor 2.PVI 7;Helios.Base.IndicatorPushButton;PVI 7" Name="push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.7.released" />
+      <Action Target="Visual;Monitor 2.PVI 7;Helios.Base.IndicatorPushButton;PVI 7" Name="release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI 8;Helios.Base.IndicatorPushButton;PVI 8" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.push.8" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI 8;Helios.Base.IndicatorPushButton;PVI 8" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.release.8" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.8.pushed" />
+      <Action Target="Visual;Monitor 2.PVI 8;Helios.Base.IndicatorPushButton;PVI 8" Name="push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.8.released" />
+      <Action Target="Visual;Monitor 2.PVI 8;Helios.Base.IndicatorPushButton;PVI 8" Name="release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI 9;Helios.Base.IndicatorPushButton;PVI 9" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.push.9" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI 9;Helios.Base.IndicatorPushButton;PVI 9" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.release.9" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.9.pushed" />
+      <Action Target="Visual;Monitor 2.PVI 9;Helios.Base.IndicatorPushButton;PVI 9" Name="push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.9.released" />
+      <Action Target="Visual;Monitor 2.PVI 9;Helios.Base.IndicatorPushButton;PVI 9" Name="release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI 4;Helios.Base.IndicatorPushButton;PVI 4" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.push.4" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI 4;Helios.Base.IndicatorPushButton;PVI 4" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.release.4" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.4.pushed" />
+      <Action Target="Visual;Monitor 2.PVI 4;Helios.Base.IndicatorPushButton;PVI 4" Name="push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.4.released" />
+      <Action Target="Visual;Monitor 2.PVI 4;Helios.Base.IndicatorPushButton;PVI 4" Name="release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI 5;Helios.Base.IndicatorPushButton;PVI 5" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.push.5" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI 5;Helios.Base.IndicatorPushButton;PVI 5" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.release.5" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.5.pushed" />
+      <Action Target="Visual;Monitor 2.PVI 5;Helios.Base.IndicatorPushButton;PVI 5" Name="push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.5.released" />
+      <Action Target="Visual;Monitor 2.PVI 5;Helios.Base.IndicatorPushButton;PVI 5" Name="release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI 6;Helios.Base.IndicatorPushButton;PVI 6" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.push.6" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI 6;Helios.Base.IndicatorPushButton;PVI 6" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.release.6" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.6.pushed" />
+      <Action Target="Visual;Monitor 2.PVI 6;Helios.Base.IndicatorPushButton;PVI 6" Name="push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.6.released" />
+      <Action Target="Visual;Monitor 2.PVI 6;Helios.Base.IndicatorPushButton;PVI 6" Name="release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI 1;Helios.Base.IndicatorPushButton;PVI 1" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.push.1" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI 1;Helios.Base.IndicatorPushButton;PVI 1" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.release.1" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.1.pushed" />
+      <Action Target="Visual;Monitor 2.PVI 1;Helios.Base.IndicatorPushButton;PVI 1" Name="push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.1.released" />
+      <Action Target="Visual;Monitor 2.PVI 1;Helios.Base.IndicatorPushButton;PVI 1" Name="release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI 2;Helios.Base.IndicatorPushButton;PVI 2" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.push.2" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI 2;Helios.Base.IndicatorPushButton;PVI 2" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.release.2" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.2.pushed" />
+      <Action Target="Visual;Monitor 2.PVI 2;Helios.Base.IndicatorPushButton;PVI 2" Name="push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.2.released" />
+      <Action Target="Visual;Monitor 2.PVI 2;Helios.Base.IndicatorPushButton;PVI 2" Name="release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI 3;Helios.Base.IndicatorPushButton;PVI 3" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.push.3" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI 3;Helios.Base.IndicatorPushButton;PVI 3" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.release.3" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.3.pushed" />
+      <Action Target="Visual;Monitor 2.PVI 3;Helios.Base.IndicatorPushButton;PVI 3" Name="push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.3.released" />
+      <Action Target="Visual;Monitor 2.PVI 3;Helios.Base.IndicatorPushButton;PVI 3" Name="release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI 0;Helios.Base.IndicatorPushButton;PVI 0" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.push.0" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI 0;Helios.Base.IndicatorPushButton;PVI 0" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.release.0" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.0.pushed" />
+      <Action Target="Visual;Monitor 2.PVI 0;Helios.Base.IndicatorPushButton;PVI 0" Name="push" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.0.released" />
+      <Action Target="Visual;Monitor 2.PVI 0;Helios.Base.IndicatorPushButton;PVI 0" Name="release" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI CXL;Helios.Base.IndicatorPushButton;PVI CXL" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.push.Cancel" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI CXL;Helios.Base.IndicatorPushButton;PVI CXL" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.release.Cancel" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.Cancel indicator.changed" />
+      <Action Target="Visual;Monitor 2.PVI CXL;Helios.Base.IndicatorPushButton;PVI CXL" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI ENT;Helios.Base.IndicatorPushButton;PVI ENT" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.push.Enter" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI ENT;Helios.Base.IndicatorPushButton;PVI ENT" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.release.Enter" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.Enter indicator.changed" />
+      <Action Target="Visual;Monitor 2.PVI ENT;Helios.Base.IndicatorPushButton;PVI ENT" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI WPT;Helios.Base.IndicatorPushButton;PVI WPT" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.push.Waypoints" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI WPT;Helios.Base.IndicatorPushButton;PVI WPT" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.release.Waypoints" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.Waypoints indicator.changed" />
+      <Action Target="Visual;Monitor 2.PVI WPT;Helios.Base.IndicatorPushButton;PVI WPT" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI FIX;Helios.Base.IndicatorPushButton;PVI FIX" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.push.Fixpoints" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI FIX;Helios.Base.IndicatorPushButton;PVI FIX" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.release.Fixpoints" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.Fixpoints indicator.changed" />
+      <Action Target="Visual;Monitor 2.PVI FIX;Helios.Base.IndicatorPushButton;PVI FIX" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI AIR;Helios.Base.IndicatorPushButton;PVI AIR" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.push.Airfields" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI AIR;Helios.Base.IndicatorPushButton;PVI AIR" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.release.Airfields" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.Airfields indicator.changed" />
+      <Action Target="Visual;Monitor 2.PVI AIR;Helios.Base.IndicatorPushButton;PVI AIR" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI TGT;Helios.Base.IndicatorPushButton;PVI TGT" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.push.Targets" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI TGT;Helios.Base.IndicatorPushButton;PVI TGT" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.release.Targets" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.Targets indicator.changed" />
+      <Action Target="Visual;Monitor 2.PVI TGT;Helios.Base.IndicatorPushButton;PVI TGT" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI SELF;Helios.Base.IndicatorPushButton;PVI SELF" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.push.Self coordinates" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI SELF;Helios.Base.IndicatorPushButton;PVI SELF" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.release.Self coordinates" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.Self coordinates indicator.changed" />
+      <Action Target="Visual;Monitor 2.PVI SELF;Helios.Base.IndicatorPushButton;PVI SELF" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI DEV;Helios.Base.IndicatorPushButton;PVI DEV" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.push.Course Deviation/Time/Range" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI DEV;Helios.Base.IndicatorPushButton;PVI DEV" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.release.Course Deviation/Time/Range" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.Course Deviation/Time/Range indicator.changed" />
+      <Action Target="Visual;Monitor 2.PVI DEV;Helios.Base.IndicatorPushButton;PVI DEV" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI WIND;Helios.Base.IndicatorPushButton;PVI WIND" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.push.Wind Heading/Speed" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI WIND;Helios.Base.IndicatorPushButton;PVI WIND" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.release.Wind Heading/Speed" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.Wind Heading/Speed indicator.changed" />
+      <Action Target="Visual;Monitor 2.PVI WIND;Helios.Base.IndicatorPushButton;PVI WIND" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI HDG;Helios.Base.IndicatorPushButton;PVI HDG" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.push.True Heading/Time/Range" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI HDG;Helios.Base.IndicatorPushButton;PVI HDG" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.release.True Heading/Time/Range" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.True Heading/Time/Range indicator.changed" />
+      <Action Target="Visual;Monitor 2.PVI HDG;Helios.Base.IndicatorPushButton;PVI HDG" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI BRG;Helios.Base.IndicatorPushButton;PVI BRG" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.push.Bearing/Range" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI BRG;Helios.Base.IndicatorPushButton;PVI BRG" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.release.Bearing/Range" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.Bearing/Range indicator.changed" />
+      <Action Target="Visual;Monitor 2.PVI BRG;Helios.Base.IndicatorPushButton;PVI BRG" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI INIT;Helios.Base.IndicatorPushButton;PVI INIT" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.push.Initial Nav Points" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI INIT;Helios.Base.IndicatorPushButton;PVI INIT" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.release.Initial Nav Points" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.Initial Nav Points indicator.changed" />
+      <Action Target="Visual;Monitor 2.PVI INIT;Helios.Base.IndicatorPushButton;PVI INIT" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI ALN-N;Helios.Base.IndicatorPushButton;PVI ALN-N" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.push.Normal INU Alignment" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI ALN-N;Helios.Base.IndicatorPushButton;PVI ALN-N" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.release.Normal INU Alignment" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.Normal INU Alignment indicator.changed" />
+      <Action Target="Visual;Monitor 2.PVI ALN-N;Helios.Base.IndicatorPushButton;PVI ALN-N" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI ALN-P;Helios.Base.IndicatorPushButton;PVI ALN-P" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.push.Precise INU Alignment" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI ALN-P;Helios.Base.IndicatorPushButton;PVI ALN-P" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.release.Precise INU Alignment" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.Precise INU Alignment indicator.changed" />
+      <Action Target="Visual;Monitor 2.PVI ALN-P;Helios.Base.IndicatorPushButton;PVI ALN-P" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI INU-RST;Helios.Base.IndicatorPushButton;PVI INU-RST" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.push.INU Realignment" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI INU-RST;Helios.Base.IndicatorPushButton;PVI INU-RST" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.release.INU Realignment" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.INU Realignment indicator.changed" />
+      <Action Target="Visual;Monitor 2.PVI INU-RST;Helios.Base.IndicatorPushButton;PVI INU-RST" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.PVI Master Mode;Helios.Base.RotarySwitch;PVI Master Mode" Name="position.changed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.set.Master Mode" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVI-800 Control Panel.Master Mode.changed" />
+      <Action Target="Visual;Monitor 2.PVI Master Mode;Helios.Base.RotarySwitch;PVI Master Mode" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.AP BNK;Helios.Base.IndicatorPushButton;AP BNK" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Autopilot.push.Bank Hold" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.AP BNK;Helios.Base.IndicatorPushButton;AP BNK" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Autopilot.release.Bank Hold" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Autopilot.Bank Hold indicator.changed" />
+      <Action Target="Visual;Monitor 2.AP BNK;Helios.Base.IndicatorPushButton;AP BNK" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.AP PTH;Helios.Base.IndicatorPushButton;AP PTH" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Autopilot.push.Pitch Hold" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.AP PTH;Helios.Base.IndicatorPushButton;AP PTH" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Autopilot.release.Pitch Hold" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Autopilot.Pitch Hold indicator.changed" />
+      <Action Target="Visual;Monitor 2.AP PTH;Helios.Base.IndicatorPushButton;AP PTH" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.AP HDG;Helios.Base.IndicatorPushButton;AP HDG" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Autopilot.push.Heading Hold" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.AP HDG;Helios.Base.IndicatorPushButton;AP HDG" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Autopilot.release.Heading Hold" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Autopilot.Heading Hold indicator.changed" />
+      <Action Target="Visual;Monitor 2.AP HDG;Helios.Base.IndicatorPushButton;AP HDG" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.AP ALT;Helios.Base.IndicatorPushButton;AP ALT" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Autopilot.push.Altitude hold" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.AP ALT;Helios.Base.IndicatorPushButton;AP ALT" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Autopilot.release.Altitude hold" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Autopilot.Altitude hold indicator.changed" />
+      <Action Target="Visual;Monitor 2.AP ALT;Helios.Base.IndicatorPushButton;AP ALT" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.AP FD;Helios.Base.IndicatorPushButton;AP FD" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Autopilot.push.Flight Director" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.AP FD;Helios.Base.IndicatorPushButton;AP FD" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Autopilot.release.Flight Director" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Autopilot.Flight Director indicator.changed" />
+      <Action Target="Visual;Monitor 2.AP FD;Helios.Base.IndicatorPushButton;AP FD" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.AP ALT SRC;Helios.Base.ThreeWayToggleSwitch;AP ALT SRC" Name="position.changed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Autopilot.set.Altitude Source" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Autopilot.Altitude Source.changed" />
+      <Action Target="Visual;Monitor 2.AP ALT SRC;Helios.Base.ThreeWayToggleSwitch;AP ALT SRC" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.AP HDG-TRK;Helios.Base.ThreeWayToggleSwitch;AP HDG-TRK" Name="position.changed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Autopilot.set.Autopilot Heading/Course" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Autopilot.Autopilot Heading/Course.changed" />
+      <Action Target="Visual;Monitor 2.AP HDG-TRK;Helios.Base.ThreeWayToggleSwitch;AP HDG-TRK" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.DL SELF ID;Helios.Base.RotarySwitch;DL SELF ID" Name="position.changed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVTz-800 Data Link.set.Self Id" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVTz-800 Data Link.Self Id.changed" />
+      <Action Target="Visual;Monitor 2.DL SELF ID;Helios.Base.RotarySwitch;DL SELF ID" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.DL MODE;Helios.Base.RotarySwitch;DL MODE" Name="position.changed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVTz-800 Data Link.set.Data Mode" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PVTz-800 Data Link.Data Mode.changed" />
+      <Action Target="Visual;Monitor 2.DL MODE;Helios.Base.RotarySwitch;DL MODE" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.DL W1;Helios.Base.IndicatorPushButton;DL W1" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.push.To Wingman 1" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.DL W1;Helios.Base.IndicatorPushButton;DL W1" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.release.To Wingman 1" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.To Wingman 1 indicator.changed" />
+      <Action Target="Visual;Monitor 2.DL W1;Helios.Base.IndicatorPushButton;DL W1" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.DL W2;Helios.Base.IndicatorPushButton;DL W2" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.push.To Wingman 2" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.DL W2;Helios.Base.IndicatorPushButton;DL W2" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.release.To Wingman 2" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.To Wingman 2 indicator.changed" />
+      <Action Target="Visual;Monitor 2.DL W2;Helios.Base.IndicatorPushButton;DL W2" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.DL W3;Helios.Base.IndicatorPushButton;DL W3" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.push.To Wingman 3" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.DL W3;Helios.Base.IndicatorPushButton;DL W3" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.release.To Wingman 3" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.To Wingman 3 indicator.changed" />
+      <Action Target="Visual;Monitor 2.DL W3;Helios.Base.IndicatorPushButton;DL W3" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.DL W4;Helios.Base.IndicatorPushButton;DL W4" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.push.To Wingman 4" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.DL W4;Helios.Base.IndicatorPushButton;DL W4" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.release.To Wingman 4" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.To Wingman 4 indicator.changed" />
+      <Action Target="Visual;Monitor 2.DL W4;Helios.Base.IndicatorPushButton;DL W4" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.DL ALL;Helios.Base.IndicatorPushButton;DL ALL" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.push.To All" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.DL ALL;Helios.Base.IndicatorPushButton;DL ALL" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.release.To All" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.To All indicator.changed" />
+      <Action Target="Visual;Monitor 2.DL ALL;Helios.Base.IndicatorPushButton;DL ALL" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.DL T1;Helios.Base.IndicatorPushButton;DL T1" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.push.Target #1/Vehicle" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.DL T1;Helios.Base.IndicatorPushButton;DL T1" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.release.Target #1/Vehicle" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.Target #1/Vehicle indicator.changed" />
+      <Action Target="Visual;Monitor 2.DL T1;Helios.Base.IndicatorPushButton;DL T1" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.DL T2;Helios.Base.IndicatorPushButton;DL T2" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.push.Target #2/SAM" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.DL T2;Helios.Base.IndicatorPushButton;DL T2" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.release.Target #2/SAM" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.Target #2/SAM indicator.changed" />
+      <Action Target="Visual;Monitor 2.DL T2;Helios.Base.IndicatorPushButton;DL T2" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.DL T3;Helios.Base.IndicatorPushButton;DL T3" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.push.Target #3/Other" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.DL T3;Helios.Base.IndicatorPushButton;DL T3" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.release.Target #3/Other" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.Target #3/Other indicator.changed" />
+      <Action Target="Visual;Monitor 2.DL T3;Helios.Base.IndicatorPushButton;DL T3" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.DL SND;Helios.Base.IndicatorPushButton;DL SND" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.push.Send/Memory" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.DL SND;Helios.Base.IndicatorPushButton;DL SND" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.release.Send/Memory" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.Send/Memory indicator.changed" />
+      <Action Target="Visual;Monitor 2.DL SND;Helios.Base.IndicatorPushButton;DL SND" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.DL ERS;Helios.Base.IndicatorPushButton;DL ERS" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.push.Erase" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.DL ERS;Helios.Base.IndicatorPushButton;DL ERS" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.release.Erase" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.Erase indicator.changed" />
+      <Action Target="Visual;Monitor 2.DL ERS;Helios.Base.IndicatorPushButton;DL ERS" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.DL ING;Helios.Base.IndicatorPushButton;DL ING" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.push.Ingress to Target" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.DL ING;Helios.Base.IndicatorPushButton;DL ING" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.release.Ingress to Target" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.Ingress to Target indicator.changed" />
+      <Action Target="Visual;Monitor 2.DL ING;Helios.Base.IndicatorPushButton;DL ING" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.DL IPT;Helios.Base.IndicatorPushButton;DL IPT" Name="pushed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.push.Ingress Point" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.DL IPT;Helios.Base.IndicatorPushButton;DL IPT" Name="released" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.release.Ingress Point" />
+      <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="Datalink.Ingress Point indicator.changed" />
+      <Action Target="Visual;Monitor 2.DL IPT;Helios.Base.IndicatorPushButton;DL IPT" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+  </Bindings>
+</HeliosProfile>
