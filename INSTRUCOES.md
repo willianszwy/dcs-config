@@ -62,16 +62,23 @@ e deixar só o Tonemap ativo — os valores foram escolhidos para serem sutis o 
 - `Helios/Images/KA50/` (pasta inteira) -> `Documents\Helios\Images\KA50\`
 
 O profile usa imagens customizadas no estilo real do cockpit (botões pretos com
-legenda em cirílico e faixa-lâmpada verde/âmbar, geradas a partir das texturas do
-módulo). **Sem a pasta de imagens os botões aparecem vazios.**
+faixa-lâmpada verde/âmbar, legendas em inglês no padrão do cockpit EN do DCS).
+**Sem a pasta de imagens os botões aparecem vazios.**
 
 ### Painéis incluídos (monitor 2, junto aos viewports SHKVAL/ABRIS):
-- PVI-800 completo: displays, teclado 0-9, ВВОД/СБРОС, modos (ППМ/ОР/АЭР/ОТ/φλ...),
+- PVI-800 completo: displays, teclado 0-9, ENTER/CANCEL, modos (WPT/FIX/AIRF/TGT/φλ...),
   alinhamento INU e seletor Master Mode (7 posições)
-- Autopilot: К/Т/Н/В/ДУ com lâmpadas de canal engatado + toggles БАР-РВ e ЗК-ЛЗП
-- Datalink PRTz: destinatários 1-4/ВСЕМ, tipos de alvo, ПРД/ПАМ, СТИР, ОТВОРОТ,
+- Autopilot: B/P/H/A/FD com lâmpadas de canal engatado + toggles ALT SRC e HDG-TRK
+- Datalink PRTz: destinatários 1-4/ALL, tipos de alvo, SEND/MEM, ERASE, TURN AWAY,
   ponto de ingresso + knobs Self ID e modo
-- Todas as lâmpadas sincronizam com o estado do jogo (trigger `<nome> indicator`)
+- Targeting/Shkval (faixa sob o SHKVAL): AUTO TURN, AIR TGT, HEAD ON, MOV TGT,
+  RESET + toggles LASER STBY e TRACK
+- Armamento (PUI-800): displays de arma selecionada, quantidade e munição do canhão
+- UV-26: display de flares, lâmpadas L/R, knob L/L+R/R, START/STOP/RESET e programação
+- Luzes de alerta sob o ABRIS: MSTR CAUT e ROTOR RPM (clicáveis), FIRE, UNDER FIRE, XMSN
+- Lâmpadas e displays sincronizam com o estado do jogo (trigger `<nome> indicator`)
+- Se mudar tamanho/posição dos viewports, reconfigurar a interface
+  "DCS Monitor Setup" no Helios Profile Editor
 
 ---
 
