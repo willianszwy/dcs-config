@@ -13,12 +13,18 @@ function reconfigure_for_unit(unit_type)
 
   if  unit_type == "F-16C_50" or false then
     F_16C_DED = { x = 4677, y = 57, width = 517, height = 175 }
-    F_16C_EHSI = { x = 4199, y = 582, width = 391, height = 391 }
+    F_16C_EHSI = { x = 4203, y = 533, width = 391, height = 391 }
     F_16C_LEFT_MFCD = { x = 3551, y = 423, width = 550, height = 550 }
     F_16C_RIGHT_MFCD = { x = 4692, y = 423, width = 550, height = 550 }
     F_16C_RWR = { x = 3790, y = 8, width = 296, height = 296 }
     return
   end -- _F-16C_50
+
+  if  unit_type == "Ka-50_3" or false then
+    KA_50_3_ABRIS = { x = 4688, y = 23, width = 660, height = 851 }
+    KA_50_3_SHKVAL = { x = 3452, y = 23, width = 950, height = 599 }
+    return
+  end -- _Ka-50_3
 end -- reconfigure_for_unit()
 
 Viewports = {

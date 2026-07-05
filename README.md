@@ -1,6 +1,6 @@
-# DCS World — Setup Multi-Monitor (F-16C + AH-64D)
+# DCS World — Setup Multi-Monitor (F-16C + AH-64D + Ka-50 III)
 
-Exporta MFDs do F-16C e do AH-64D Apache para monitor secundário, com ajuste de brilho via ReShade e botões OSB clicáveis via Helios.
+Exporta MFDs do F-16C, do AH-64D Apache e SHKVAL/ABRIS do Ka-50 III para monitor secundário, com ajuste de brilho via ReShade e painéis clicáveis via Helios.
 
 ## Ambiente
 
@@ -18,8 +18,9 @@ Exporta MFDs do F-16C e do AH-64D Apache para monitor secundário, com ajuste de
 
 ```
 ├── README.md
+├── INSTRUCOES.md                       # doc complementar (setup antigo f16_2monitors + detalhes do Ka-50)
 ├── MonitorSetup/
-│   └── Helios.lua                      # config de monitores gerada pelo Helios (F-16 + AH-64)
+│   └── Helios.lua                      # config de monitores gerada pelo Helios (F-16 + AH-64 + Ka-50)
 ├── ReShade/
 │   ├── ReShadePreset.ini               # preset do ReShade (Tonemap para clarear monitor 2)
 │   └── UIMask.png                      # máscara 5360×1440 — direita toda preta (shader aplica ao monitor inteiro)
@@ -27,6 +28,9 @@ Exporta MFDs do F-16C e do AH-64D Apache para monitor secundário, com ajuste de
     ├── dcs-f16.hpf                     # perfil original F-16C (legado)
     ├── dcs-f16-new.hpf                 # perfil F-16C com todos os botões OSB mapeados
     ├── dcs-ah64.hpf                    # perfil AH-64D com Pilot + CP/G, botões OSB e funções
+    ├── ka50.hpf                        # perfil Ka-50 III: SHKVAL/ABRIS + PVI-800, autopilot, datalink,
+    │                                   #   targeting, armamento, UV-26 e luzes de alerta
+    ├── Images/KA50/                    # imagens dos botões do perfil Ka-50 (obrigatórias)
     └── ViewportSetups/
         ├── dcs-f16-new.hvpf.json       # viewport setup F-16C para o Helios Profile Editor
         └── dcs-ah64.hvpf.json          # viewport setup AH-64D para o Helios Profile Editor
@@ -66,7 +70,16 @@ MonitorSetup/Helios.lua
 | `AH_64D_LEFT_MFCD_CPG` | 3618 | 247 | 544 | 579 | MFD esquerdo (CP/G) |
 | `AH_64D_RIGHT_MFCD_CPG` | 4618 | 247 | 544 | 579 | MFD direito (CP/G) |
 
+### Viewports exportados — Ka-50 III
+
+| Viewport | x | y | width | height | Descrição |
+|---|---|---|---|---|---|
+| `KA_50_3_SHKVAL` | 3452 | 23 | 950 | 599 | Shkval (mira eletro-óptica) |
+| `KA_50_3_ABRIS` | 4688 | 23 | 660 | 851 | ABRIS (mapa/navegação) |
+
 > Coordenadas são absolutas no canvas DCS (monitor 2 começa em x=3440).
+> Se mudar tamanho/posição dos viewports no perfil, reconfigurar a interface
+> **DCS Monitor Setup** no Helios Profile Editor para regerar o `Helios.lua`.
 
 ---
 
@@ -125,6 +138,8 @@ O Helios cria uma sobreposição transparente com botões OSB clicáveis em cima
 ```
 Helios/dcs-f16-new.hpf  →  C:\Users\[usuario]\Documents\Helios\Profiles\
 Helios/dcs-ah64.hpf     →  C:\Users\[usuario]\Documents\Helios\Profiles\
+Helios/ka50.hpf         →  C:\Users\[usuario]\Documents\Helios\Profiles\
+Helios/Images/KA50/     →  C:\Users\[usuario]\Documents\Helios\Images\KA50\   (pasta inteira)
 ```
 
 **Copiar os viewport setups:**
@@ -169,10 +184,35 @@ Os painéis PLT e CPG ficam na mesma posição (sobrepostos); apenas um fica vis
 
 > **Importante:** O botão `B1` no AH-64D se chama `Button B1/M(Menu)` na interface DCS. O nome exato deve constar tanto no trigger quanto na action da binding — qualquer divergência faz o botão não responder.
 
-### 3.3 Iniciar o Helios
+### 3.3 Perfil Ka-50 III (`ka50.hpf`)
+
+Perfil completo do Black Shark 3 no monitor 2, ao redor dos viewports SHKVAL e ABRIS:
+
+- **PVI-800** (navegação): displays, teclado 0-9, ENTER/CANCEL, modos WPT/FIX/AIRF/TGT/φλ,
+  alinhamento INU e seletor Master Mode de 7 posições
+- **Autopilot**: canais B/P/H/A/FD com lâmpadas de engate + toggles ALT SRC e HDG-TRK
+- **Datalink PRTz**: destinatários 1-4/ALL, tipos de alvo, SEND/MEM, ERASE, TURN AWAY,
+  ponto de ingresso + knobs Self ID e modo
+- **Targeting/Shkval**: AUTO TURN, AIR TGT, HEAD ON, MOV TGT, RESET + toggles LASER STBY e TRACK
+- **Armamento (PUI-800)**: displays de arma selecionada, quantidade e munição do canhão
+- **UV-26**: display de flares, lâmpadas L/R, knob L/L+R/R, START/STOP/RESET e programação
+- **Luzes de alerta**: MSTR CAUT e ROTOR RPM (clicáveis para reset), FIRE, UNDER FIRE, XMSN
+- Softkeys 1-5 do ABRIS sob o viewport do mapa
+
+Legendas em inglês (padrão do cockpit EN do DCS). Lâmpadas e displays sincronizam
+com o estado do jogo em tempo real.
+
+> **Importante:** o perfil usa as imagens de `Helios/Images/KA50/` — sem essa pasta
+> copiada para `Documents\Helios\Images\KA50\`, os botões aparecem vazios.
+
+**Interface DCS:**
+- No Profile Editor: `Profile → Add Interface → DCS Black Shark 3`
+- Selecionar a pasta do DCS e clicar em **Install**
+
+### 3.4 Iniciar o Helios
 
 1. Abrir o **Helios Control Center**
-2. Selecionar o perfil desejado (`dcs-f16-new` ou `dcs-ah64`)
+2. Selecionar o perfil desejado (`dcs-f16-new`, `dcs-ah64` ou `ka50`)
 3. Clicar em **Start**
 4. Entrar no DCS com a aeronave correspondente
 
