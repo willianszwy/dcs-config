@@ -195,9 +195,12 @@ Perfil completo do Black Shark 3 no monitor 2, ao redor dos viewports SHKVAL e A
   ponto de ingresso + knobs Self ID e modo
 - **Targeting/Shkval**: AUTO TURN, AIR TGT, HEAD ON, MOV TGT, RESET + toggles LASER STBY e TRACK
 - **Armamento (PUI-800)**: displays de arma selecionada, quantidade e munição do canhão
+- **Weapon Control (PUI-800)**: lâmpadas de estação pronta 1-4 + toggles MASTER ARM,
+  modo MAN/AUTO, munição HE/AP, cadência LO/HI e rajada LONG/MED/SHORT
 - **UV-26**: display de flares, lâmpadas L/R, knob L/L+R/R, START/STOP/RESET e programação
 - **Luzes de alerta**: MSTR CAUT e ROTOR RPM (clicáveis para reset), FIRE, UNDER FIRE, XMSN
-- Softkeys 1-5 do ABRIS sob o viewport do mapa
+- Softkeys 1-5 do ABRIS sob o viewport do mapa (alinhados com as luzes de alerta,
+  acendem em âmbar ao clicar)
 
 Legendas em inglês (padrão do cockpit EN do DCS). Lâmpadas e displays sincronizam
 com o estado do jogo em tempo real.

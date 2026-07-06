@@ -76,8 +76,8 @@
           <Children />
         </Control>
         <Control TypeIdentifier="Helios.Base.PushButton" Name="Tactile Square - Light" SnapTarget="True" Locked="False">
-          <Location>1291,885</Location>
-          <Size>80,50</Size>
+          <Location>1258,885</Location>
+          <Size>120,50</Size>
           <Hidden>False</Hidden>
           <Type>Momentary</Type>
           <Image>KA50/btn_abris_off.png</Image>
@@ -85,8 +85,8 @@
           <Children />
         </Control>
         <Control TypeIdentifier="Helios.Base.PushButton" Name="Tactile Square - Light 1" SnapTarget="True" Locked="False">
-          <Location>1414,885</Location>
-          <Size>80,50</Size>
+          <Location>1388,885</Location>
+          <Size>120,50</Size>
           <Hidden>False</Hidden>
           <Type>Momentary</Type>
           <Image>KA50/btn_abris_off.png</Image>
@@ -94,8 +94,8 @@
           <Children />
         </Control>
         <Control TypeIdentifier="Helios.Base.PushButton" Name="Tactile Square - Light 2" SnapTarget="True" Locked="False">
-          <Location>1537,885</Location>
-          <Size>80,50</Size>
+          <Location>1518,885</Location>
+          <Size>120,50</Size>
           <Hidden>False</Hidden>
           <Type>Momentary</Type>
           <Image>KA50/btn_abris_off.png</Image>
@@ -103,8 +103,8 @@
           <Children />
         </Control>
         <Control TypeIdentifier="Helios.Base.PushButton" Name="Tactile Square - Light 3" SnapTarget="True" Locked="False">
-          <Location>1660,885</Location>
-          <Size>80,50</Size>
+          <Location>1648,885</Location>
+          <Size>120,50</Size>
           <Hidden>False</Hidden>
           <Type>Momentary</Type>
           <Image>KA50/btn_abris_off.png</Image>
@@ -112,8 +112,8 @@
           <Children />
         </Control>
         <Control TypeIdentifier="Helios.Base.PushButton" Name="Tactile Square - Light 4" SnapTarget="True" Locked="False">
-          <Location>1783,885</Location>
-          <Size>80,50</Size>
+          <Location>1778,885</Location>
+          <Size>120,50</Size>
           <Hidden>False</Hidden>
           <Type>Momentary</Type>
           <Image>KA50/btn_abris_off.png</Image>
@@ -1464,6 +1464,746 @@
           <PushedImage>KA50/btn_cmint_off_in.png</PushedImage>
           <Children />
         </Control>
+        <Control TypeIdentifier="Helios.Base.Text" Name="LBL WPN CTRL" SnapTarget="True" Locked="False">
+          <FillBackground>False</FillBackground>
+          <BackgroundColor>#FF1E1E1E</BackgroundColor>
+          <FontColor>#FFCFCBC0</FontColor>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>13</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>WEAPON CONTROL</Text>
+          <ScalingMode>Height</ScalingMode>
+          <Location>975,418</Location>
+          <Size>260,18</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Indicator" Name="STA RDY 1" SnapTarget="True" Locked="False">
+          <OnImage>{Helios}/Images/Indicators/caution-indicator-off.png</OnImage>
+          <OffImage>{Helios}/Images/Indicators/caution-indicator-off.png</OffImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>10</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>STA 1</Text>
+          <OnTextColor>#FF43D943</OnTextColor>
+          <OffTextColor>#FF232322</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>975,442</Location>
+          <Size>60,24</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Indicator" Name="STA RDY 2" SnapTarget="True" Locked="False">
+          <OnImage>{Helios}/Images/Indicators/caution-indicator-off.png</OnImage>
+          <OffImage>{Helios}/Images/Indicators/caution-indicator-off.png</OffImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>10</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>STA 2</Text>
+          <OnTextColor>#FF43D943</OnTextColor>
+          <OffTextColor>#FF232322</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>1041,442</Location>
+          <Size>60,24</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Indicator" Name="STA RDY 3" SnapTarget="True" Locked="False">
+          <OnImage>{Helios}/Images/Indicators/caution-indicator-off.png</OnImage>
+          <OffImage>{Helios}/Images/Indicators/caution-indicator-off.png</OffImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>10</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>STA 3</Text>
+          <OnTextColor>#FF43D943</OnTextColor>
+          <OffTextColor>#FF232322</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>1107,442</Location>
+          <Size>60,24</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Indicator" Name="STA RDY 4" SnapTarget="True" Locked="False">
+          <OnImage>{Helios}/Images/Indicators/caution-indicator-off.png</OnImage>
+          <OffImage>{Helios}/Images/Indicators/caution-indicator-off.png</OffImage>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>10</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>STA 4</Text>
+          <OnTextColor>#FF43D943</OnTextColor>
+          <OffTextColor>#FF232322</OffTextColor>
+          <ScalingMode>Height</ScalingMode>
+          <Location>1173,442</Location>
+          <Size>60,24</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Text" Name="LBL WPN MASTER ARM UP" SnapTarget="True" Locked="False">
+          <FillBackground>False</FillBackground>
+          <BackgroundColor>#FF1E1E1E</BackgroundColor>
+          <FontColor>#FFCFCBC0</FontColor>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>10</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>ARM</Text>
+          <ScalingMode>Height</ScalingMode>
+          <Location>975,470</Location>
+          <Size>65,16</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="WPN MASTER ARM" SnapTarget="True" Locked="False">
+          <Location>985,488</Location>
+          <Size>45,95</Size>
+          <Hidden>False</Hidden>
+          <SwitchType>OnOn</SwitchType>
+          <Orientation>Vertical</Orientation>
+          <ClickType>Swipe</ClickType>
+          <PositionOneImage>{Helios}/Images/Toggles/round-up.png</PositionOneImage>
+          <PositionTwoImage>{Helios}/Images/Toggles/round-down.png</PositionTwoImage>
+          <DefaultPosition>Two</DefaultPosition>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Text" Name="LBL WPN MASTER ARM DN" SnapTarget="True" Locked="False">
+          <FillBackground>False</FillBackground>
+          <BackgroundColor>#FF1E1E1E</BackgroundColor>
+          <FontColor>#FFCFCBC0</FontColor>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>10</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>SAFE</Text>
+          <ScalingMode>Height</ScalingMode>
+          <Location>975,585</Location>
+          <Size>65,16</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Text" Name="LBL WPN MASTER ARM NM" SnapTarget="True" Locked="False">
+          <FillBackground>False</FillBackground>
+          <BackgroundColor>#FF1E1E1E</BackgroundColor>
+          <FontColor>#FF8A867C</FontColor>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>9</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>MASTER</Text>
+          <ScalingMode>Height</ScalingMode>
+          <Location>975,603</Location>
+          <Size>65,16</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Text" Name="LBL WPN MODE UP" SnapTarget="True" Locked="False">
+          <FillBackground>False</FillBackground>
+          <BackgroundColor>#FF1E1E1E</BackgroundColor>
+          <FontColor>#FFCFCBC0</FontColor>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>10</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>MAN</Text>
+          <ScalingMode>Height</ScalingMode>
+          <Location>1042,470</Location>
+          <Size>65,16</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="WPN MODE" SnapTarget="True" Locked="False">
+          <Location>1052,488</Location>
+          <Size>45,95</Size>
+          <Hidden>False</Hidden>
+          <SwitchType>OnOn</SwitchType>
+          <Orientation>Vertical</Orientation>
+          <ClickType>Swipe</ClickType>
+          <PositionOneImage>{Helios}/Images/Toggles/round-up.png</PositionOneImage>
+          <PositionTwoImage>{Helios}/Images/Toggles/round-down.png</PositionTwoImage>
+          <DefaultPosition>Two</DefaultPosition>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Text" Name="LBL WPN MODE DN" SnapTarget="True" Locked="False">
+          <FillBackground>False</FillBackground>
+          <BackgroundColor>#FF1E1E1E</BackgroundColor>
+          <FontColor>#FFCFCBC0</FontColor>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>10</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>AUTO</Text>
+          <ScalingMode>Height</ScalingMode>
+          <Location>1042,585</Location>
+          <Size>65,16</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Text" Name="LBL WPN MODE NM" SnapTarget="True" Locked="False">
+          <FillBackground>False</FillBackground>
+          <BackgroundColor>#FF1E1E1E</BackgroundColor>
+          <FontColor>#FF8A867C</FontColor>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>9</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>MODE</Text>
+          <ScalingMode>Height</ScalingMode>
+          <Location>1042,603</Location>
+          <Size>65,16</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Text" Name="LBL WPN AMMO UP" SnapTarget="True" Locked="False">
+          <FillBackground>False</FillBackground>
+          <BackgroundColor>#FF1E1E1E</BackgroundColor>
+          <FontColor>#FFCFCBC0</FontColor>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>10</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>HE</Text>
+          <ScalingMode>Height</ScalingMode>
+          <Location>1109,470</Location>
+          <Size>65,16</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="WPN AMMO" SnapTarget="True" Locked="False">
+          <Location>1119,488</Location>
+          <Size>45,95</Size>
+          <Hidden>False</Hidden>
+          <SwitchType>OnOn</SwitchType>
+          <Orientation>Vertical</Orientation>
+          <ClickType>Swipe</ClickType>
+          <PositionOneImage>{Helios}/Images/Toggles/round-up.png</PositionOneImage>
+          <PositionTwoImage>{Helios}/Images/Toggles/round-down.png</PositionTwoImage>
+          <DefaultPosition>One</DefaultPosition>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Text" Name="LBL WPN AMMO DN" SnapTarget="True" Locked="False">
+          <FillBackground>False</FillBackground>
+          <BackgroundColor>#FF1E1E1E</BackgroundColor>
+          <FontColor>#FFCFCBC0</FontColor>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>10</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>AP</Text>
+          <ScalingMode>Height</ScalingMode>
+          <Location>1109,585</Location>
+          <Size>65,16</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Text" Name="LBL WPN AMMO NM" SnapTarget="True" Locked="False">
+          <FillBackground>False</FillBackground>
+          <BackgroundColor>#FF1E1E1E</BackgroundColor>
+          <FontColor>#FF8A867C</FontColor>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>9</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>AMMO</Text>
+          <ScalingMode>Height</ScalingMode>
+          <Location>1109,603</Location>
+          <Size>65,16</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Text" Name="LBL WPN RATE UP" SnapTarget="True" Locked="False">
+          <FillBackground>False</FillBackground>
+          <BackgroundColor>#FF1E1E1E</BackgroundColor>
+          <FontColor>#FFCFCBC0</FontColor>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>10</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>LO</Text>
+          <ScalingMode>Height</ScalingMode>
+          <Location>1176,470</Location>
+          <Size>65,16</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="WPN RATE" SnapTarget="True" Locked="False">
+          <Location>1186,488</Location>
+          <Size>45,95</Size>
+          <Hidden>False</Hidden>
+          <SwitchType>OnOn</SwitchType>
+          <Orientation>Vertical</Orientation>
+          <ClickType>Swipe</ClickType>
+          <PositionOneImage>{Helios}/Images/Toggles/round-up.png</PositionOneImage>
+          <PositionTwoImage>{Helios}/Images/Toggles/round-down.png</PositionTwoImage>
+          <DefaultPosition>Two</DefaultPosition>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Text" Name="LBL WPN RATE DN" SnapTarget="True" Locked="False">
+          <FillBackground>False</FillBackground>
+          <BackgroundColor>#FF1E1E1E</BackgroundColor>
+          <FontColor>#FFCFCBC0</FontColor>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>10</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>HI</Text>
+          <ScalingMode>Height</ScalingMode>
+          <Location>1176,585</Location>
+          <Size>65,16</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Text" Name="LBL WPN RATE NM" SnapTarget="True" Locked="False">
+          <FillBackground>False</FillBackground>
+          <BackgroundColor>#FF1E1E1E</BackgroundColor>
+          <FontColor>#FF8A867C</FontColor>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>9</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>RATE</Text>
+          <ScalingMode>Height</ScalingMode>
+          <Location>1176,603</Location>
+          <Size>65,16</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Text" Name="LBL WPN BURST UP" SnapTarget="True" Locked="False">
+          <FillBackground>False</FillBackground>
+          <BackgroundColor>#FF1E1E1E</BackgroundColor>
+          <FontColor>#FFCFCBC0</FontColor>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>10</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>LONG</Text>
+          <ScalingMode>Height</ScalingMode>
+          <Location>975,632</Location>
+          <Size>65,16</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.ThreeWayToggleSwitch" Name="WPN BURST" SnapTarget="True" Locked="False">
+          <Location>985,650</Location>
+          <Size>45,95</Size>
+          <Hidden>False</Hidden>
+          <SwitchType>OnOnOn</SwitchType>
+          <Orientation>Vertical</Orientation>
+          <ClickType>Swipe</ClickType>
+          <PositionOneImage>{Helios}/Images/Toggles/round-up.png</PositionOneImage>
+          <PositionTwoImage>{Helios}/Images/Toggles/round-norm.png</PositionTwoImage>
+          <PositionThreeImage>{Helios}/Images/Toggles/round-down.png</PositionThreeImage>
+          <DefaultPosition>Two</DefaultPosition>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Text" Name="LBL WPN BURST DN" SnapTarget="True" Locked="False">
+          <FillBackground>False</FillBackground>
+          <BackgroundColor>#FF1E1E1E</BackgroundColor>
+          <FontColor>#FFCFCBC0</FontColor>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>10</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>SHORT</Text>
+          <ScalingMode>Height</ScalingMode>
+          <Location>975,747</Location>
+          <Size>65,16</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Text" Name="LBL WPN BURST NM" SnapTarget="True" Locked="False">
+          <FillBackground>False</FillBackground>
+          <BackgroundColor>#FF1E1E1E</BackgroundColor>
+          <FontColor>#FF8A867C</FontColor>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>9</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>BURST</Text>
+          <ScalingMode>Height</ScalingMode>
+          <Location>975,765</Location>
+          <Size>65,16</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Text" Name="LBL PVI PANEL" SnapTarget="True" Locked="False">
+          <FillBackground>False</FillBackground>
+          <BackgroundColor>#FF1E1E1E</BackgroundColor>
+          <FontColor>#FFCFCBC0</FontColor>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>13</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>PVI-800 NAV</Text>
+          <ScalingMode>Height</ScalingMode>
+          <Location>25,748</Location>
+          <Size>315,18</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Text" Name="LBL AP PANEL" SnapTarget="True" Locked="False">
+          <FillBackground>False</FillBackground>
+          <BackgroundColor>#FF1E1E1E</BackgroundColor>
+          <FontColor>#FFCFCBC0</FontColor>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>10</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>AUTOPILOT</Text>
+          <ScalingMode>Height</ScalingMode>
+          <Location>25,889</Location>
+          <Size>312,14</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Text" Name="LBL AP ALT SRC" SnapTarget="True" Locked="False">
+          <FillBackground>False</FillBackground>
+          <BackgroundColor>#FF1E1E1E</BackgroundColor>
+          <FontColor>#FFCFCBC0</FontColor>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>10</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>BARO / RALT</Text>
+          <ScalingMode>Height</ScalingMode>
+          <Location>30,1065</Location>
+          <Size>90,16</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Text" Name="LBL AP HDG-TRK" SnapTarget="True" Locked="False">
+          <FillBackground>False</FillBackground>
+          <BackgroundColor>#FF1E1E1E</BackgroundColor>
+          <FontColor>#FFCFCBC0</FontColor>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>10</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>HDG / TRK</Text>
+          <ScalingMode>Height</ScalingMode>
+          <Location>120,1065</Location>
+          <Size>90,16</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Text" Name="LBL DL SELF ID" SnapTarget="True" Locked="False">
+          <FillBackground>False</FillBackground>
+          <BackgroundColor>#FF1E1E1E</BackgroundColor>
+          <FontColor>#FF8A867C</FontColor>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>10</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>SELF ID</Text>
+          <ScalingMode>Height</ScalingMode>
+          <Location>965,1038</Location>
+          <Size>90,16</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Text" Name="LBL DL MODE" SnapTarget="True" Locked="False">
+          <FillBackground>False</FillBackground>
+          <BackgroundColor>#FF1E1E1E</BackgroundColor>
+          <FontColor>#FF8A867C</FontColor>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>10</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>DL MODE</Text>
+          <ScalingMode>Height</ScalingMode>
+          <Location>1060,1038</Location>
+          <Size>90,16</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
+        <Control TypeIdentifier="Helios.Base.Text" Name="LBL PVI MASTER" SnapTarget="True" Locked="False">
+          <FillBackground>False</FillBackground>
+          <BackgroundColor>#FF1E1E1E</BackgroundColor>
+          <FontColor>#FF8A867C</FontColor>
+          <Font>
+            <FontFamily>Franklin Gothic</FontFamily>
+            <FontStyle>Normal</FontStyle>
+            <FontWeight>Normal</FontWeight>
+            <FontSize>10</FontSize>
+            <HorizontalAlignment>Center</HorizontalAlignment>
+            <VerticalAlignment>Center</VerticalAlignment>
+            <Padding>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Right>0</Right>
+              <Bottom>0</Bottom>
+            </Padding>
+          </Font>
+          <Text>MASTER MODE</Text>
+          <ScalingMode>Height</ScalingMode>
+          <Location>1055,770</Location>
+          <Size>100,16</Size>
+          <Hidden>False</Hidden>
+          <Children />
+        </Control>
       </Children>
     </Monitor>
   </Monitors>
@@ -2566,6 +3306,76 @@
       <Trigger Source="Visual;Monitor 2.CM INTVL;Helios.Base.PushButton;CM INTVL" Name="released" />
       <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="UV-26 CMD.release.Dispence interval" />
       <StaticValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PUI-800.Station 1 Ready Lamp.changed" />
+      <Action Target="Visual;Monitor 2.STA RDY 1;Helios.Base.Indicator;STA RDY 1" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PUI-800.Station 2 Ready Lamp.changed" />
+      <Action Target="Visual;Monitor 2.STA RDY 2;Helios.Base.Indicator;STA RDY 2" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PUI-800.Station 3 Ready Lamp.changed" />
+      <Action Target="Visual;Monitor 2.STA RDY 3;Helios.Base.Indicator;STA RDY 3" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PUI-800.Station 4 Ready Lamp.changed" />
+      <Action Target="Visual;Monitor 2.STA RDY 4;Helios.Base.Indicator;STA RDY 4" Name="set.indicator" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.WPN MASTER ARM;Helios.Base.ToggleSwitch;WPN MASTER ARM" Name="position.changed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PUI-800.set.Master Arm" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PUI-800.Master Arm.changed" />
+      <Action Target="Visual;Monitor 2.WPN MASTER ARM;Helios.Base.ToggleSwitch;WPN MASTER ARM" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.WPN MODE;Helios.Base.ToggleSwitch;WPN MODE" Name="position.changed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PUI-800.set.Weapon Control Mode" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PUI-800.Weapon Control Mode.changed" />
+      <Action Target="Visual;Monitor 2.WPN MODE;Helios.Base.ToggleSwitch;WPN MODE" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.WPN AMMO;Helios.Base.ToggleSwitch;WPN AMMO" Name="position.changed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PUI-800.set.Cannon Round Select" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PUI-800.Cannon Round Select.changed" />
+      <Action Target="Visual;Monitor 2.WPN AMMO;Helios.Base.ToggleSwitch;WPN AMMO" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.WPN RATE;Helios.Base.ToggleSwitch;WPN RATE" Name="position.changed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PUI-800.set.Cannon Rate of Fire" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PUI-800.Cannon Rate of Fire.changed" />
+      <Action Target="Visual;Monitor 2.WPN RATE;Helios.Base.ToggleSwitch;WPN RATE" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.WPN BURST;Helios.Base.ThreeWayToggleSwitch;WPN BURST" Name="position.changed" />
+      <Action Target="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PUI-800.set.Weapon Burst Length" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.KA50-3;DCS Black Shark 3" Name="PUI-800.Weapon Burst Length.changed" />
+      <Action Target="Visual;Monitor 2.WPN BURST;Helios.Base.ThreeWayToggleSwitch;WPN BURST" Name="set.position" />
+      <TriggerValue />
     </Binding>
   </Bindings>
 </HeliosProfile>

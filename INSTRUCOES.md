@@ -74,6 +74,8 @@ faixa-lâmpada verde/âmbar, legendas em inglês no padrão do cockpit EN do DCS
 - Targeting/Shkval (faixa sob o SHKVAL): AUTO TURN, AIR TGT, HEAD ON, MOV TGT,
   RESET + toggles LASER STBY e TRACK
 - Armamento (PUI-800): displays de arma selecionada, quantidade e munição do canhão
+- Weapon Control (PUI-800): lâmpadas de estação pronta 1-4 + toggles MASTER ARM,
+  MAN/AUTO, HE/AP, cadência LO/HI e rajada LONG/MED/SHORT
 - UV-26: display de flares, lâmpadas L/R, knob L/L+R/R, START/STOP/RESET e programação
 - Luzes de alerta sob o ABRIS: MSTR CAUT e ROTOR RPM (clicáveis), FIRE, UNDER FIRE, XMSN
 - Lâmpadas e displays sincronizam com o estado do jogo (trigger `<nome> indicator`)
